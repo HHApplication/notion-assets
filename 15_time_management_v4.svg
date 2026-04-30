@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 24px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 12px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+    </style>
+  </defs>
+  <text x="600" y="30" font-size="22" font-weight="bold" fill="#1A237E" text-anchor="middle">GESTION DU TEMPS — UNE JOURNÉE D'ANTEF</text>
+
+  <!-- Timeline bar at top -->
+  <rect x="50" y="45" width="1100" height="35" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <rect x="50" y="45" width="220" height="35" rx="8" fill="#FFF9C4" opacity="0.5"/>
+  <text x="110" y="67" font-size="10" fill="#F9A825" font-weight="bold">Petit matin</text>
+  <rect x="270" y="45" width="220" height="35" fill="#FFE082" opacity="0.3"/>
+  <text x="340" y="67" font-size="10" fill="#F9A825" font-weight="bold">Matin</text>
+  <rect x="490" y="45" width="180" height="35" fill="#FFD54F" opacity="0.2"/>
+  <text x="550" y="67" font-size="10" fill="#FF8F00" font-weight="bold">Midi</text>
+  <rect x="670" y="45" width="220" height="35" fill="#FFB74D" opacity="0.2"/>
+  <text x="740" y="67" font-size="10" fill="#E65100" font-weight="bold">Après-midi</text>
+  <rect x="890" y="45" width="260" height="35" rx="8" fill="#FF8A65" opacity="0.2"/>
+  <text x="990" y="67" font-size="10" fill="#BF360C" font-weight="bold">Soir</text>
+
+  <!-- Panel 1: Morning - get time units -->
+  <rect class="panel" x="15" y="90" width="285" height="380"/>
+  <text class="num" x="30" y="118">1</text>
+  <text x="157" y="116" font-size="13" font-weight="bold" fill="#1A237E">DÉBUT DE JOURNÉE</text>
+  <!-- Antef waking up -->
+  <circle cx="100" cy="190" r="20" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="92" y="198" font-size="18">🌅</text>
+  <text x="85" y="225" font-size="10" fill="#2C1810" font-weight="bold">Antef</text>
+  <!-- Time units received -->
+  <rect x="150" y="150" width="130" height="80" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="165" y="172" font-size="12" fill="#2E7D32" font-weight="bold">⏱️ Unités reçues</text>
+  <text x="165" y="195" font-size="28" fill="#2E7D32" font-weight="bold">12</text>
+  <text x="205" y="195" font-size="11" fill="#2E7D32">unités</text>
+  <text x="165" y="220" font-size="9" fill="#666">1 unité ≈ 1h ≈ 10min réel</text>
+  <!-- Free actions list -->
+  <rect x="40" y="260" width="230" height="110" rx="6" fill="#ECEFF1"/>
+  <text x="60" y="280" font-size="11" fill="#2C1810" font-weight="bold">Actions GRATUITES :</text>
+  <text x="60" y="298" font-size="10" fill="#666">🚶 Se déplacer</text>
+  <text x="60" y="314" font-size="10" fill="#666">💬 Discuter</text>
+  <text x="60" y="330" font-size="10" fill="#666">🛒 Acheter</text>
+  <text x="60" y="346" font-size="10" fill="#666">⚔️ Combattre</text>
+  <text x="60" y="362" font-size="10" fill="#666">→ impact quasi nul</text>
+  <text class="label" x="157" y="440">Unités = BUDGET TEMPS</text>
+
+  <!-- Panel 2: Choose activities -->
+  <rect class="panel" x="310" y="90" width="285" height="380"/>
+  <text class="num" x="325" y="118">2</text>
+  <text x="452" y="116" font-size="13" font-weight="bold" fill="#1A237E">CHOISIR SES ACTIVITÉS</text>
+  <!-- Mission card 1 -->
+  <rect x="330" y="140" width="240" height="75" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="345" y="160" font-size="10" fill="#2E7D32" font-weight="bold">⭐ Funérailles (Coptos)</text>
+  <text x="345" y="176" font-size="9" fill="#2E7D32">📍 Coptos | ⏰ 14h | ⏱️ ???</text>
+  <text x="345" y="192" font-size="9" fill="#2E7D32">🎁 Inconnu | Coût : 4-6 unités</text>
+  <text x="345" y="207" font-size="8" fill="#FF8F00">⚠️ Bloque l'après-midi</text>
+  <!-- Mission card 2 -->
+  <rect x="330" y="225" width="240" height="75" rx="6" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="345" y="245" font-size="10" fill="#1565C0" font-weight="bold">🗡️ Exploration (Kharga Oasis)</text>
+  <text x="345" y="261" font-size="9" fill="#1565C0">📍 Oasis | ⏱️ Période complète</text>
+  <text x="345" y="277" font-size="9" fill="#1565C0">👥 1-4 | ⚠️ 5 | 🎁 💎 + XP + 💰</text>
+  <text x="345" y="292" font-size="8" fill="#FF8F00">Coût : ~6 unités</text>
+  <!-- Quête perso -->
+  <rect x="330" y="310" width="240" height="50" rx="6" fill="#EDE7F6" stroke="#7E57C2" stroke-width="1.5"/>
+  <text x="345" y="330" font-size="10" fill="#4A148C" font-weight="bold">💜 Quête perso d'Antef</text>
+  <text x="345" y="346" font-size="9" fill="#4A148C">⏱️ 2 unités | Soir uniquement</text>
+  <!-- Remaining units counter -->
+  <rect x="340" y="375" width="220" height="35" rx="8" fill="#FFF3E0" stroke="#FF8F00" stroke-width="2"/>
+  <text x="360" y="398" font-size="12" fill="#E65100" font-weight="bold">⏱️ Restant : 12 → planifier !</text>
+  <text class="label" x="452" y="445">TOUT NE RENTRE PAS</text>
+
+  <!-- Panel 3: Timing = reward -->
+  <rect class="panel" x="605" y="90" width="285" height="380"/>
+  <text class="num" x="620" y="118">3</text>
+  <text x="747" y="116" font-size="13" font-weight="bold" fill="#FF8F00">TIMING = RÉCOMPENSE</text>
+  <!-- Character finishing a mission -->
+  <circle cx="700" cy="200" r="20" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="692" y="208" font-size="18">💪</text>
+  <!-- Clock/timer -->
+  <circle cx="780" cy="180" r="25" fill="white" stroke="#FF8F00" stroke-width="2.5"/>
+  <text x="770" y="188" font-size="16">⏱️</text>
+  <!-- Units spent → timing meter -->
+  <rect x="640" y="260" width="200" height="50" rx="8" fill="#FFF3E0" stroke="#FF8F00" stroke-width="2"/>
+  <text x="660" y="280" font-size="10" fill="#E65100" font-weight="bold">Unités dépensées : 8</text>
+  <text x="660" y="298" font-size="10" fill="#E65100">→ Timing accumulé : 8 ⭐</text>
+  <!-- Arrow down to rewards -->
+  <text x="740" y="330" font-size="16" fill="#D4A843">↓</text>
+  <!-- Reward box -->
+  <rect x="640" y="340" width="200" height="90" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="660" y="362" font-size="11" fill="#2E7D32" font-weight="bold">🏆 RÉCOMPENSES TIMING</text>
+  <text x="660" y="380" font-size="10" fill="#2E7D32">✨ Items rares</text>
+  <text x="660" y="396" font-size="10" fill="#2E7D32">💰 Debens bonus</text>
+  <text x="660" y="412" font-size="10" fill="#2E7D32">📖 Lore caché</text>
+  <text x="660" y="428" font-size="10" fill="#2E7D32">🎯 Appétence reconnue</text>
+  <text class="label" x="747" y="458">INVESTIR DU TEMPS = PAYE</text>
+
+  <!-- Panel 4: Moduler / Retry -->
+  <rect class="panel" x="900" y="90" width="285" height="380"/>
+  <text class="num" x="915" y="118">4</text>
+  <text x="1042" y="116" font-size="13" font-weight="bold" fill="#1A237E">MODULER / REFAIRE</text>
+  <!-- Character at mission start with slider -->
+  <circle cx="1000" cy="190" r="18" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="993" y="197" font-size="16">🤔</text>
+  <!-- Slider: negotiate time -->
+  <rect x="930" y="230" width="200" height="30" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="945" y="250" font-size="9" fill="#1565C0">Temps alloué : ◀ 4h ▶</text>
+  <circle cx="1060" cy="245" r="8" fill="#1565C0"/>
+  <!-- Three options -->
+  <rect x="920" y="280" width="250" height="135" rx="6" fill="#ECEFF1"/>
+  <text x="940" y="300" font-size="10" fill="#2C1810" font-weight="bold">3 possibilités :</text>
+  <text x="940" y="320" font-size="10" fill="#4CAF50">✅ Accepter tel quel</text>
+  <text x="940" y="340" font-size="10" fill="#FF8F00">⚖️ Moduler (+ ou - temps)</text>
+  <text x="940" y="360" font-size="10" fill="#7E57C2">👁️ Se projeter via [SHIFT+]</text>
+  <text x="940" y="380" font-size="9" fill="#C62828">   (coûte des SP !)</text>
+  <text x="940" y="400" font-size="10" fill="#2196F3">🔄 Recommencer le soir (Ba)</text>
+  <!-- Key message -->
+  <rect x="920" y="420" width="250" height="25" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="970" y="438" font-size="10" fill="#2E7D32" font-weight="bold">Droit à l'info ET à l'erreur</text>
+  <text class="label" x="1042" y="458">FLEXIBILITÉ TOTALE</text>
+</svg>

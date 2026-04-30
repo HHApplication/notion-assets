@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 26px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 13px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+      .body { stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+    </style>
+  </defs>
+  
+  <text x="600" y="35" font-size="22" font-weight="bold" fill="#1A237E" text-anchor="middle">3 PERSONNAGES, 3 APPROCHES — MÊME OBSTACLE</text>
+  <!-- Central obstacle description -->
+  <text x="600" y="55" font-size="13" fill="#666" text-anchor="middle">Un objet précieux est dans une pièce fermée au 3ème étage</text>
+
+  <!-- Panel 1: Anubis - grappin (stealth/rooftop) -->
+  <rect class="panel" x="15" y="70" width="380" height="400"/>
+  <text class="num" x="30" y="100">1</text>
+  <text x="205" y="98" font-size="15" font-weight="bold" fill="#37474F">ANUBIS — le chasseur</text>
+  <!-- Building with rooftop -->
+  <rect x="180" y="150" width="120" height="200" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/>
+  <rect x="180" y="150" width="120" height="30" fill="#BCAAA4" stroke="#8D6E63" stroke-width="1"/>
+  <!-- Windows -->
+  <rect x="200" y="200" width="25" height="30" fill="#E3F2FD" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="255" y="200" width="25" height="30" fill="#E3F2FD" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="200" y="260" width="25" height="30" fill="#E3F2FD" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="255" y="260" width="25" height="30" fill="#FFF9C4" stroke="#8D6E63" stroke-width="1"/>
+  <text x="260" y="280" font-size="8" fill="#FFD54F">💎</text>
+  <!-- Anubis climbing with grappin -->
+  <circle cx="100" cy="200" r="20" fill="#37474F" stroke="#2C1810" stroke-width="2"/>
+  <text x="92" y="207" font-size="18">😎</text>
+  <line class="body" x1="100" y1="220" x2="100" y2="270"/>
+  <line class="body" x1="100" y1="240" x2="80" y2="255"/>
+  <line class="body" x1="100" y1="240" x2="120" y2="225"/>
+  <!-- Grapple line to roof -->
+  <line x1="120" y1="225" x2="180" y2="155" stroke="#795548" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- Hook -->
+  <text x="172" y="158" font-size="12">🪝</text>
+  <!-- Arrow: going up -->
+  <text x="130" y="180" font-size="14" fill="#37474F">↗️</text>
+  <!-- Style note -->
+  <rect x="40" y="370" width="330" height="70" rx="6" fill="#ECEFF1" stroke="#607D8B" stroke-width="1.5"/>
+  <text x="60" y="392" font-size="11" fill="#37474F">🪝 Grappin → toits et hauteurs</text>
+  <text x="60" y="410" font-size="11" fill="#37474F">🤫 Discret, agile, furtif</text>
+  <text x="60" y="428" font-size="11" fill="#37474F">😨 Fait peur aux NPC</text>
+  <text class="label" x="205" y="460">PAR LE TOIT</text>
+
+  <!-- Panel 2: Kahay - hacking -->
+  <rect class="panel" x="410" y="70" width="380" height="400"/>
+  <text class="num" x="425" y="100">2</text>
+  <text x="600" y="98" font-size="15" font-weight="bold" fill="#E91E63">KAHAY — la hackeuse</text>
+  <!-- Same building -->
+  <rect x="540" y="150" width="120" height="200" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/>
+  <rect x="540" y="150" width="120" height="30" fill="#BCAAA4" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="560" y="200" width="25" height="30" fill="#E3F2FD" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="615" y="200" width="25" height="30" fill="#E3F2FD" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="560" y="260" width="25" height="30" fill="#E3F2FD" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="615" y="260" width="25" height="30" fill="#FFF9C4" stroke="#8D6E63" stroke-width="1"/>
+  <text x="620" y="280" font-size="8" fill="#FFD54F">💎</text>
+  <!-- Door with digital lock -->
+  <rect x="582" y="320" width="30" height="35" fill="#5D4037" stroke="#3E2723" stroke-width="2"/>
+  <rect x="585" y="310" width="24" height="15" rx="3" fill="#C62828" stroke="#B71C1C" stroke-width="1"/>
+  <text x="590" y="321" font-size="7" fill="white">🔒</text>
+  <!-- Kahay at the door hacking -->
+  <circle cx="480" cy="310" r="20" fill="#FFB6C1" stroke="#2C1810" stroke-width="2"/>
+  <text x="472" y="318" font-size="18">😏</text>
+  <line x1="480" y1="330" x2="480" y2="370" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="480" y1="345" x2="510" y2="330" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Hacking beam -->
+  <line x1="510" y1="330" x2="585" y2="318" stroke="#00BCD4" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="530" y="320" font-size="10" fill="#00BCD4">📡</text>
+  <!-- Lock turns green -->
+  <rect x="585" y="310" width="24" height="15" rx="3" fill="#4CAF50" stroke="#2E7D32" stroke-width="1"/>
+  <text x="590" y="321" font-size="7" fill="white">🔓</text>
+  <!-- Style note -->
+  <rect x="435" y="370" width="330" height="70" rx="6" fill="#FCE4EC" stroke="#E91E63" stroke-width="1.5"/>
+  <text x="455" y="392" font-size="11" fill="#C2185B">💻 Piratage des systèmes</text>
+  <text x="455" y="410" font-size="11" fill="#C2185B">🔄 Retourne la sécu contre l'ennemi</text>
+  <text x="455" y="428" font-size="11" fill="#C2185B">🤫 Frêle mais discrète</text>
+  <text class="label" x="600" y="460">PAR LE PIRATAGE</text>
+
+  <!-- Panel 3: Hetep - explosives -->
+  <rect class="panel" x="805" y="70" width="380" height="400"/>
+  <text class="num" x="820" y="100">3</text>
+  <text x="995" y="98" font-size="15" font-weight="bold" fill="#FF8F00">HETEP — le bourrin</text>
+  <!-- Same building but with hole in wall -->
+  <rect x="930" y="150" width="120" height="200" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/>
+  <rect x="930" y="150" width="120" height="30" fill="#BCAAA4" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="950" y="200" width="25" height="30" fill="#E3F2FD" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="1005" y="200" width="25" height="30" fill="#E3F2FD" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="1005" y="260" width="25" height="30" fill="#FFF9C4" stroke="#8D6E63" stroke-width="1"/>
+  <text x="1010" y="280" font-size="8" fill="#FFD54F">💎</text>
+  <!-- EXPLOSION hole in wall -->
+  <circle cx="945" cy="270" r="30" fill="#FFF8E7" stroke="#FF8F00" stroke-width="2"/>
+  <text x="930" y="278" font-size="22">💥</text>
+  <!-- Hetep running through -->
+  <circle cx="870" cy="270" r="20" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="862" y="278" font-size="18">🤪</text>
+  <line x1="870" y1="290" x2="870" y2="330" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="870" y1="305" x2="895" y2="290" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="870" y1="330" x2="855" y2="355" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="870" y1="330" x2="890" y2="350" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Debris -->
+  <rect x="920" y="295" width="8" height="8" fill="#BCAAA4" transform="rotate(15,924,299)"/>
+  <rect x="960" y="240" width="6" height="6" fill="#BCAAA4" transform="rotate(30,963,243)"/>
+  <rect x="955" y="300" width="10" height="5" fill="#BCAAA4" transform="rotate(-20,960,302)"/>
+  <!-- Style note -->
+  <rect x="830" y="370" width="330" height="70" rx="6" fill="#FFF3E0" stroke="#FF8F00" stroke-width="1.5"/>
+  <text x="850" y="392" font-size="11" fill="#E65100">💣 Explosifs → murs, obstacles</text>
+  <text x="850" y="410" font-size="11" fill="#E65100">💪 Efficace mais PAS discret</text>
+  <text x="850" y="428" font-size="11" fill="#E65100">🚨 Tout le monde sait !</text>
+  <text class="label" x="995" y="460">PAR LA FORCE</text>
+</svg>

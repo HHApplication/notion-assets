@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 26px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 13px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+      .body { stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+    </style>
+  </defs>
+  
+  <text x="600" y="35" font-size="22" font-weight="bold" fill="#1A237E" text-anchor="middle">[SHIFT+] — L'IMPLANT NEURONAL</text>
+
+  <!-- Panel 1: Normal view -->
+  <rect class="panel" x="15" y="55" width="380" height="420"/>
+  <text class="num" x="30" y="85">1</text>
+  <text x="205" y="83" font-size="14" font-weight="bold" fill="#1A237E">SANS [SHIFT+]</text>
+  <!-- Simple street scene -->
+  <rect x="18" y="100" width="374" height="250" fill="#E3F2FD"/>
+  <rect x="18" y="320" width="374" height="60" fill="#E8D5B7"/>
+  <!-- Buildings -->
+  <rect x="50" y="200" width="60" height="120" fill="#D7CCC8" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="130" y="180" width="70" height="140" fill="#BCAAA4" stroke="#8D6E63" stroke-width="1"/>
+  <!-- Character walking normally -->
+  <circle cx="270" cy="260" r="22" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="262" y="268" font-size="20">😐</text>
+  <line class="body" x1="270" y1="282" x2="270" y2="330"/>
+  <line class="body" x1="270" y1="302" x2="248" y2="318"/>
+  <line class="body" x1="270" y1="302" x2="292" y2="318"/>
+  <line class="body" x1="270" y1="330" x2="255" y2="360"/>
+  <line class="body" x1="270" y1="330" x2="285" y2="360"/>
+  <!-- Hidden enemies (invisible) -->
+  <circle cx="340" cy="280" r="15" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+  <text x="335" y="285" font-size="10" opacity="0.2">?</text>
+  <text x="150" y="400" font-size="11" fill="#666" text-anchor="middle">Monde nu — ennemis invisibles</text>
+  <text x="150" y="418" font-size="11" fill="#666" text-anchor="middle">Rencontres aléatoires</text>
+  <text class="label" x="205" y="455">VUE STANDARD</text>
+
+  <!-- Arrow 1→2 -->
+  <text x="400" y="270" font-size="20" fill="#00BCD4" font-weight="bold">→</text>
+  <text x="398" y="290" font-size="10" fill="#00BCD4" font-weight="bold">ON</text>
+
+  <!-- Panel 2: SHIFT+ activated -->
+  <rect class="panel" x="410" y="55" width="380" height="420"/>
+  <text class="num" x="425" y="85">2</text>
+  <text x="600" y="83" font-size="14" font-weight="bold" fill="#00BCD4">AVEC [SHIFT+] 👁️</text>
+  <!-- Same scene but with AR overlay -->
+  <rect x="413" y="100" width="374" height="250" fill="#E0F7FA"/>
+  <rect x="413" y="320" width="374" height="60" fill="#E8D5B7"/>
+  <!-- Buildings with data overlay -->
+  <rect x="445" y="200" width="60" height="120" fill="#D7CCC8" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="510" y="130" width="15" height="8" rx="2" fill="#00BCD4" opacity="0.5"/>
+  <text x="513" y="137" font-size="5" fill="white">ℹ️</text>
+  <rect x="525" y="180" width="70" height="140" fill="#BCAAA4" stroke="#8D6E63" stroke-width="1"/>
+  <!-- AR overlays -->
+  <rect x="440" y="115" width="120" height="22" rx="4" fill="#00BCD4" opacity="0.3" stroke="#00BCD4" stroke-width="1"/>
+  <text x="450" y="131" font-size="9" fill="#006064">📍 Temple d'Isis: 200m</text>
+  <rect x="600" y="140" width="90" height="20" rx="4" fill="#FF9800" opacity="0.4" stroke="#FF9800" stroke-width="1"/>
+  <text x="608" y="155" font-size="9" fill="#E65100">🛒 PROMO!</text>
+  <rect x="580" y="170" width="100" height="18" rx="4" fill="#FF9800" opacity="0.3"/>
+  <text x="588" y="183" font-size="8" fill="#E65100">📢 Abonne-toi!</text>
+  <!-- Character with glowing eye -->
+  <circle cx="520" cy="260" r="22" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="512" y="268" font-size="20">🤖</text>
+  <!-- Eye glow -->
+  <circle cx="530" cy="255" r="5" fill="#00BCD4" opacity="0.5"/>
+  <!-- Enemy NOW visible -->
+  <circle cx="680" cy="280" r="16" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+  <text x="673" y="287" font-size="14">😡</text>
+  <!-- Battery indicator -->
+  <rect x="440" y="370" width="80" height="16" rx="4" fill="#FFF3E0" stroke="#FF8F00" stroke-width="1"/>
+  <rect x="440" y="370" width="50" height="16" rx="4" fill="#FF8F00"/>
+  <text x="445" y="382" font-size="8" fill="white">🔋 62%</text>
+  <text x="540" y="382" font-size="9" fill="#E65100">↓ batterie descend</text>
+  <text x="600" y="405" font-size="11" fill="#006064" text-anchor="middle">Navigation + infos + ennemis visibles</text>
+  <text x="600" y="423" font-size="11" fill="#C62828" text-anchor="middle">Mais : pubs + SP baissent + batterie</text>
+  <text class="label" x="600" y="455">RA + RV = METAVERS</text>
+
+  <!-- Arrow 2→3 (with warning) -->
+  <text x="795" y="270" font-size="20" fill="#C62828" font-weight="bold">→</text>
+  <text x="795" y="290" font-size="9" fill="#C62828" font-weight="bold">⚠️</text>
+
+  <!-- Panel 3: The SECRET -->
+  <rect class="panel" x="805" y="55" width="380" height="420"/>
+  <text class="num" x="820" y="85">3</text>
+  <text x="995" y="83" font-size="14" font-weight="bold" fill="#C62828">LE SECRET</text>
+  <!-- Dark revelation -->
+  <rect x="808" y="100" width="374" height="250" fill="#263238" opacity="0.1"/>
+  <!-- Character realizes -->
+  <circle cx="920" cy="220" r="24" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="911" y="229" font-size="22">😱</text>
+  <line class="body" x1="920" y1="244" x2="920" y2="300"/>
+  <line class="body" x1="920" y1="265" x2="895" y2="280"/>
+  <line class="body" x1="920" y1="265" x2="945" y2="280"/>
+  <!-- What they think they see -->
+  <rect x="840" y="110" width="130" height="45" rx="6" fill="#E0F7FA" stroke="#00BCD4" stroke-width="1"/>
+  <text x="855" y="130" font-size="10" fill="#006064">Ce qu'on CROIT :</text>
+  <text x="855" y="145" font-size="10" fill="#006064">🎮 Réalité mixte fun</text>
+  <!-- What it really is -->
+  <rect x="1000" y="110" width="160" height="65" rx="6" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
+  <text x="1015" y="130" font-size="10" fill="#B71C1C">Ce que c'est VRAIMENT :</text>
+  <text x="1015" y="148" font-size="10" fill="#B71C1C">💀 Introspection spirituelle</text>
+  <text x="1015" y="165" font-size="10" fill="#B71C1C">👻 Confronter ses ancêtres</text>
+  <!-- Ghost spirits surrounding -->
+  <text x="860" y="280" font-size="16" opacity="0.3">👻</text>
+  <text x="1060" y="250" font-size="20" opacity="0.3">👻</text>
+  <text x="1100" y="300" font-size="14" opacity="0.2">👻</text>
+  <text x="870" y="330" font-size="12" opacity="0.2">👻</text>
+  <!-- Key phrase -->
+  <rect x="850" y="370" width="300" height="55" rx="8" fill="#C62828" opacity="0.1" stroke="#C62828" stroke-width="2"/>
+  <text x="1000" y="395" font-size="14" fill="#B71C1C" text-anchor="middle" font-weight="bold">On RESSENT,</text>
+  <text x="1000" y="415" font-size="14" fill="#B71C1C" text-anchor="middle" font-weight="bold">on ne VOIT pas.</text>
+  <text class="label" x="995" y="455">SP BAISSENT = VOTRE MORT APPROCHE</text>
+</svg>

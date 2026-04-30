@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 26px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 13px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+      .body { stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+      .bubble { fill: white; stroke: #2C1810; stroke-width: 1.5; rx: 8; }
+    </style>
+  </defs>
+  <text x="600" y="35" font-size="22" font-weight="bold" fill="#E91E63" text-anchor="middle">STORYBOARD — DIALOGUE EN ACTION (Kahay &amp; le NPC aviné)</text>
+
+  <!-- Panel 1: Kahay approaches with charm -->
+  <rect class="panel" x="15" y="55" width="285" height="420"/>
+  <text class="num" x="30" y="85">1</text>
+  <text x="157" y="83" font-size="13" font-weight="bold" fill="#E91E63">KAHAY APPROCHE</text>
+  <!-- Street background -->
+  <rect x="18" y="100" width="279" height="230" fill="#E3F2FD"/>
+  <rect x="18" y="300" width="279" height="50" fill="#E8D5B7"/>
+  <!-- Kahay (charming) -->
+  <circle cx="100" cy="210" r="22" fill="#FFB6C1" stroke="#2C1810" stroke-width="2"/>
+  <text x="92" y="218" font-size="20">😏</text>
+  <line class="body" x1="100" y1="232" x2="100" y2="285"/>
+  <line class="body" x1="100" y1="255" x2="75" y2="270"/>
+  <line class="body" x1="100" y1="255" x2="125" y2="270"/>
+  <line class="body" x1="100" y1="285" x2="85" y2="315"/>
+  <line class="body" x1="100" y1="285" x2="115" y2="315"/>
+  <text x="82" y="340" font-size="10" fill="#E91E63" font-weight="bold">Kahay</text>
+  <!-- Charm sparkles -->
+  <text x="125" y="200" font-size="10">✨</text>
+  <text x="70" y="195" font-size="8">✨</text>
+  <!-- Speech bubble -->
+  <rect class="bubble" x="130" y="165" width="130" height="35"/>
+  <text x="145" y="188" font-size="10" fill="#2C1810">Excusez-moi, le</text>
+  <text x="145" y="198" font-size="10" fill="#2C1810">chemin vers... ? 😊</text>
+  <!-- Drunk NPC -->
+  <circle cx="230" cy="220" r="20" fill="#A5D6A7" stroke="#2C1810" stroke-width="2"/>
+  <text x="222" y="228" font-size="18">🥴</text>
+  <line x1="230" y1="240" x2="230" y2="290" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Beer bottle -->
+  <text x="250" y="265" font-size="14">🍺</text>
+  <text class="label" x="157" y="400">Kahay utilise le charme</text>
+  <text x="157" y="418" font-size="10" fill="#666" text-anchor="middle">pour obtenir une info</text>
+
+  <!-- Panel 2: NPC makes indecent proposition -->
+  <rect class="panel" x="310" y="55" width="285" height="420"/>
+  <text class="num" x="325" y="85">2</text>
+  <text x="452" y="83" font-size="13" font-weight="bold" fill="#C62828">LE NPC DÉRAPE</text>
+  <!-- Kahay surprised/disgusted -->
+  <circle cx="380" cy="220" r="22" fill="#FFB6C1" stroke="#2C1810" stroke-width="2"/>
+  <text x="372" y="228" font-size="20">😤</text>
+  <line class="body" x1="380" y1="242" x2="380" y2="290"/>
+  <!-- NPC leering -->
+  <circle cx="500" cy="210" r="22" fill="#A5D6A7" stroke="#2C1810" stroke-width="2"/>
+  <text x="492" y="218" font-size="20">😏</text>
+  <line x1="500" y1="232" x2="500" y2="280" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Gross speech bubble -->
+  <rect x="440" y="150" width="130" height="45" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
+  <text x="455" y="170" font-size="10" fill="#B71C1C">Proposition</text>
+  <text x="455" y="185" font-size="10" fill="#B71C1C">indécente 🤮</text>
+  <!-- Anger marks -->
+  <text x="345" y="200" font-size="14" fill="#C62828">💢</text>
+  <text class="label" x="452" y="400">Le NPC n'est PAS docile</text>
+  <text x="452" y="418" font-size="10" fill="#666" text-anchor="middle">Il a son propre caractère</text>
+
+  <!-- Panel 3: Player's 4 choices -->
+  <rect class="panel" x="605" y="55" width="285" height="420"/>
+  <text class="num" x="620" y="85">3</text>
+  <text x="747" y="83" font-size="13" font-weight="bold" fill="#1A237E">4 RÉPONSES POSSIBLES</text>
+  <!-- Option A: ignore -->
+  <rect x="625" y="110" width="245" height="50" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <circle cx="645" cy="135" r="14" fill="#4CAF50"/><text x="639" y="140" font-size="10" fill="white" font-weight="bold">A</text>
+  <text x="670" y="130" font-size="10" fill="#2E7D32" font-weight="bold">Ne pas relever</text>
+  <text x="670" y="145" font-size="9" fill="#666">Continuer la conversation</text>
+  <!-- Option Y: think insult -->
+  <rect x="625" y="170" width="245" height="50" rx="8" fill="#FFF3E0" stroke="#FFC107" stroke-width="1.5"/>
+  <circle cx="645" cy="195" r="14" fill="#FFC107"/><text x="639" y="200" font-size="10" fill="white" font-weight="bold">Y</text>
+  <text x="670" y="190" font-size="10" fill="#F57F17" font-weight="bold">Penser une insulte 🤬</text>
+  <text x="670" y="205" font-size="9" fill="#666">Intérieur — le NPC ne sait pas</text>
+  <!-- Option A (verbal): insult -->
+  <rect x="625" y="230" width="245" height="50" rx="8" fill="#FFEBEE" stroke="#F44336" stroke-width="1.5"/>
+  <circle cx="645" cy="255" r="14" fill="#4CAF50"/><text x="639" y="260" font-size="10" fill="white" font-weight="bold">A</text>
+  <text x="670" y="250" font-size="10" fill="#C62828" font-weight="bold">L'insulter à voix haute</text>
+  <text x="670" y="265" font-size="9" fill="#666">Risque de conflit ⚠️</text>
+  <!-- Option D-PAD: switch to Anubis -->
+  <rect x="625" y="290" width="245" height="60" rx="8" fill="#ECEFF1" stroke="#607D8B" stroke-width="1.5"/>
+  <text x="640" y="310" font-size="10" fill="#37474F" font-weight="bold">D-PAD → Switch ANUBIS</text>
+  <!-- Mini Anubis -->
+  <circle cx="660" cy="335" r="12" fill="#37474F" stroke="#2C1810" stroke-width="1.5"/>
+  <text x="654" y="340" font-size="10">😡</text>
+  <text x="680" y="338" font-size="9" fill="#37474F">La manière FORTE 💪</text>
+  <text class="label" x="747" y="400">Chaque choix = conséquence</text>
+  <text x="747" y="418" font-size="10" fill="#666" text-anchor="middle">différente</text>
+
+  <!-- Panel 4: Anubis intimidates -->
+  <rect class="panel" x="900" y="55" width="285" height="420"/>
+  <text class="num" x="915" y="85">4</text>
+  <text x="1042" y="83" font-size="13" font-weight="bold" fill="#37474F">ANUBIS INTERVIENT</text>
+  <!-- Anubis towering over NPC -->
+  <circle cx="1000" cy="180" r="26" fill="#37474F" stroke="#2C1810" stroke-width="2.5"/>
+  <text x="990" y="189" font-size="24">😠</text>
+  <line x1="1000" y1="206" x2="1000" y2="280" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1000" y1="240" x2="965" y2="260" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1000" y1="240" x2="1035" y2="220" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1000" y1="280" x2="980" y2="320" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1000" y1="280" x2="1020" y2="320" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <text x="980" y="340" font-size="10" fill="#37474F" font-weight="bold">Anubis</text>
+  <!-- NPC terrified and small -->
+  <circle cx="1120" cy="260" r="18" fill="#A5D6A7" stroke="#2C1810" stroke-width="2"/>
+  <text x="1112" y="268" font-size="16">😰</text>
+  <line x1="1120" y1="278" x2="1120" y2="310" stroke="#2C1810" stroke-width="2" stroke-linecap="round"/>
+  <!-- Shaking lines -->
+  <line x1="1105" y1="265" x2="1098" y2="265" stroke="#2C1810" stroke-width="1.5"/>
+  <line x1="1105" y1="275" x2="1096" y2="275" stroke="#2C1810" stroke-width="1.5"/>
+  <!-- Speech bubble: info obtained by force -->
+  <rect class="bubble" x="1050" y="170" width="120" height="50"/>
+  <text x="1065" y="190" font-size="10" fill="#2C1810">O-ok... c'est</text>
+  <text x="1065" y="205" font-size="10" fill="#2C1810">par là... 😰</text>
+  <!-- Result -->
+  <rect x="920" y="360" width="250" height="70" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="940" y="382" font-size="11" fill="#2E7D32" font-weight="bold">✅ Info obtenue !</text>
+  <text x="940" y="400" font-size="10" fill="#2E7D32">Mais : NPC hostile désormais</text>
+  <text x="940" y="418" font-size="10" fill="#E65100">⚠️ Conséquences futures possibles</text>
+  <text class="label" x="1042" y="460">RIEN N'EST GRATUIT</text>
+</svg>

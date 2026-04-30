@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 26px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 13px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+      .body { stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+    </style>
+  </defs>
+  <text x="600" y="30" font-size="22" font-weight="bold" fill="#1A237E" text-anchor="middle">SURVEILLANCE — LE MONDE VOUS REGARDE</text>
+  <text x="600" y="48" font-size="12" fill="#C62828" text-anchor="middle">⚠️ Extension GDD (à valider) — pas dans le Game Concept original</text>
+
+  <!-- Panel 1: Player tries to steal, camera catches -->
+  <rect class="panel" x="15" y="60" width="380" height="370"/>
+  <text class="num" x="30" y="90">1</text>
+  <text x="205" y="88" font-size="14" font-weight="bold" fill="#1A237E">CAMÉRA DE SURVEILLANCE</text>
+  <!-- Building wall with object on balcony -->
+  <rect x="200" y="120" width="170" height="200" fill="#D7CCC8" stroke="#8D6E63" stroke-width="2"/>
+  <rect x="200" y="120" width="170" height="30" fill="#BCAAA4"/>
+  <!-- Balcony with treasure -->
+  <rect x="250" y="190" width="60" height="8" fill="#8D6E63"/>
+  <text x="270" y="188" font-size="14">💎</text>
+  <!-- Camera -->
+  <rect x="340" y="135" width="20" height="15" rx="3" fill="#37474F" stroke="#263238" stroke-width="1.5"/>
+  <circle cx="348" cy="142" r="4" fill="#C62828"/>
+  <!-- Camera cone of vision -->
+  <polygon points="340,142 280,200 280,170" fill="#C62828" opacity="0.1" stroke="#C62828" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- Character trying to climb -->
+  <circle cx="100" cy="250" r="20" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="92" y="258" font-size="18">🤫</text>
+  <line class="body" x1="100" y1="270" x2="100" y2="320"/>
+  <line class="body" x1="100" y1="290" x2="130" y2="275"/>
+  <!-- Alert! -->
+  <text x="330" y="170" font-size="16" fill="#C62828">📹!</text>
+  <text class="label" x="205" y="405">Vue = alerte immédiate</text>
+
+  <!-- Panel 2: NPC witnesses and reports via SHIFT+ -->
+  <rect class="panel" x="410" y="60" width="380" height="370"/>
+  <text class="num" x="425" y="90">2</text>
+  <text x="600" y="88" font-size="14" font-weight="bold" fill="#1A237E">NPC TÉMOIN</text>
+  <!-- Street scene -->
+  <rect x="413" y="100" width="374" height="220" fill="#E3F2FD"/>
+  <rect x="413" y="290" width="374" height="50" fill="#E8D5B7"/>
+  <!-- Character stealing from stall -->
+  <circle cx="500" cy="240" r="18" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="493" y="247" font-size="16">😈</text>
+  <!-- Market stall -->
+  <rect x="540" y="230" width="50" height="40" fill="#8D6E63" stroke="#5D4037" stroke-width="1"/>
+  <text x="555" y="255" font-size="10">🍎</text>
+  <!-- Hand reaching -->
+  <line x1="518" y1="245" x2="540" y2="248" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- NPC watching -->
+  <circle cx="680" cy="250" r="18" fill="#A5D6A7" stroke="#2C1810" stroke-width="2"/>
+  <text x="672" y="258" font-size="16">👀</text>
+  <!-- NPC reports via SHIFT+ -->
+  <rect x="630" y="150" width="130" height="65" rx="6" fill="#E0F7FA" stroke="#00BCD4" stroke-width="1.5"/>
+  <text x="645" y="170" font-size="10" fill="#006064">[SHIFT+] 📡</text>
+  <text x="645" y="188" font-size="10" fill="#C62828">🚨 ALERTE ENVOYÉE</text>
+  <text x="645" y="205" font-size="9" fill="#006064">→ réseau [SHIFT+]</text>
+  <!-- Arrow from NPC to report -->
+  <line x1="680" y1="232" x2="680" y2="215" stroke="#00BCD4" stroke-width="1.5"/>
+  <text class="label" x="600" y="405">Dénonciation INSTANTANÉE</text>
+
+  <!-- Panel 3: Consequence - guards arrive -->
+  <rect class="panel" x="805" y="60" width="380" height="370"/>
+  <text class="num" x="820" y="90">3</text>
+  <text x="995" y="88" font-size="14" font-weight="bold" fill="#C62828">CONSÉQUENCES</text>
+  <!-- Guards arriving -->
+  <circle cx="900" cy="210" r="20" fill="#F44336" stroke="#2C1810" stroke-width="2"/>
+  <text x="892" y="218" font-size="18">👮</text>
+  <line x1="900" y1="230" x2="900" y2="270" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="960" cy="220" r="18" fill="#F44336" stroke="#2C1810" stroke-width="2"/>
+  <text x="953" y="228" font-size="16">👮</text>
+  <!-- Player cornered -->
+  <circle cx="1080" cy="230" r="20" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="1072" y="238" font-size="18">😱</text>
+  <!-- Drone -->
+  <rect x="1020" y="140" width="30" height="15" rx="3" fill="#607D8B"/>
+  <text x="1028" y="152" font-size="8">🤖</text>
+  <line x1="1035" y1="155" x2="1050" y2="200" stroke="#C62828" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- Warning box -->
+  <rect x="850" y="300" width="300" height="80" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+  <text x="870" y="322" font-size="11" fill="#B71C1C" font-weight="bold">⚠️ LEÇON :</text>
+  <text x="870" y="342" font-size="10" fill="#B71C1C">Observer AVANT d'agir</text>
+  <text x="870" y="360" font-size="10" fill="#B71C1C">Caméras + NPC + drones = réseau</text>
+  <text x="870" y="378" font-size="10" fill="#4CAF50">💡 Kahay peut pirater la surveillance</text>
+  <text class="label" x="995" y="415">BIEN OBSERVER D'ABORD</text>
+</svg>
