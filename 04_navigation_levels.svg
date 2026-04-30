@@ -1,0 +1,54 @@
+<svg width="1360" height="900" viewBox="0 0 680 450" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+
+<text x="340" y="22" text-anchor="middle" font-size="16" fill="#2C2C2A" font-weight="600">Navigation en poupées russes — 3 niveaux imbriqués</text>
+
+<!-- Niveau 1 : Planisphère -->
+<rect x="25" y="40" width="630" height="385" rx="20" fill="#FEFBF3" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="340" y="68" text-anchor="middle" font-size="14" fill="#412402" font-weight="600">Niveau 1 — Planisphère (vue plate)</text>
+<text x="340" y="88" text-anchor="middle" font-size="11" fill="#854F0B">Pion/jeton • Pas d'ennemi • Crash zoom vers Niveau 2 • Traversée instantanée</text>
+<text x="340" y="104" text-anchor="middle" font-size="11" fill="#854F0B" font-style="italic">Compromis : contourner l'exploration = louper missions et rencontres</text>
+
+<!-- Niveau 2 : Carte 3D -->
+<rect x="55" y="118" width="570" height="280" rx="16" fill="#F0F9F5" stroke="#1D9E75" stroke-width="1.2"/>
+<text x="340" y="142" text-anchor="middle" font-size="14" fill="#04342C" font-weight="600">Niveau 2 — Carte du monde 3D</text>
+<text x="340" y="160" text-anchor="middle" font-size="11" fill="#0F6E56">Avatar chibi • À pied ou véhicule • Icônes events/quêtes sur la carte</text>
+<text x="340" y="176" text-anchor="middle" font-size="11" fill="#0F6E56" font-style="italic">Ennemis visibles via [SHIFT+] • Sans [SHIFT+] = rencontres aléatoires (économie batterie)</text>
+
+<!-- Fields -->
+<rect x="80" y="195" width="165" height="175" rx="12" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+<text x="162" y="218" text-anchor="middle" font-size="13" fill="#26215C" font-weight="600">Field : ville</text>
+<line x1="95" y1="228" x2="230" y2="228" stroke="#AFA9EC" stroke-width="0.5"/>
+<text x="162" y="248" text-anchor="middle" font-size="11" fill="#534AB7">Taille réelle</text>
+<text x="162" y="266" text-anchor="middle" font-size="11" fill="#534AB7">NPC, boutiques, quêtes</text>
+<text x="162" y="284" text-anchor="middle" font-size="11" fill="#534AB7">Système de dialogue</text>
+<text x="162" y="302" text-anchor="middle" font-size="11" fill="#534AB7">Anubis chasse la nuit</text>
+<text x="162" y="320" text-anchor="middle" font-size="11" fill="#534AB7">Surveillance/infiltration</text>
+<text x="162" y="340" text-anchor="middle" font-size="11" fill="#534AB7" font-style="italic">Caméras, drones, NPC</text>
+<text x="162" y="358" text-anchor="middle" font-size="11" fill="#534AB7" font-style="italic">dénonçant via [SHIFT+]</text>
+
+<rect x="260" y="195" width="165" height="175" rx="12" fill="#FAECE7" stroke="#D85A30" stroke-width="0.8"/>
+<text x="342" y="218" text-anchor="middle" font-size="13" fill="#4A1B0C" font-weight="600">Field : temple</text>
+<line x1="275" y1="228" x2="410" y2="228" stroke="#F0997B" stroke-width="0.5"/>
+<text x="342" y="248" text-anchor="middle" font-size="11" fill="#993C1D">Exploration LD</text>
+<text x="342" y="266" text-anchor="middle" font-size="11" fill="#993C1D">Puzzles, énigmes</text>
+<text x="342" y="284" text-anchor="middle" font-size="11" fill="#993C1D">Trésors / items spirites</text>
+<text x="342" y="302" text-anchor="middle" font-size="11" fill="#993C1D">Shesepânkh (dieux)</text>
+<text x="342" y="320" text-anchor="middle" font-size="11" fill="#993C1D">Boss (système REN)</text>
+<text x="342" y="340" text-anchor="middle" font-size="11" fill="#993C1D" font-style="italic">Essences émotionnelles</text>
+<text x="342" y="358" text-anchor="middle" font-size="11" fill="#993C1D" font-style="italic">dans le monde invisible</text>
+
+<rect x="440" y="195" width="165" height="175" rx="12" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.8"/>
+<text x="522" y="218" text-anchor="middle" font-size="13" fill="#042C53" font-weight="600">Field : désert</text>
+<line x1="455" y1="228" x2="590" y2="228" stroke="#85B7EB" stroke-width="0.5"/>
+<text x="522" y="248" text-anchor="middle" font-size="11" fill="#185FA5">Faune mutante</text>
+<text x="522" y="266" text-anchor="middle" font-size="11" fill="#185FA5">Végétaux hostiles</text>
+<text x="522" y="284" text-anchor="middle" font-size="11" fill="#185FA5">Oasis, ruines</text>
+<text x="522" y="302" text-anchor="middle" font-size="11" fill="#185FA5">Nécropoles</text>
+<text x="522" y="320" text-anchor="middle" font-size="11" fill="#185FA5">Mekorgans sauvages</text>
+<text x="522" y="340" text-anchor="middle" font-size="11" fill="#185FA5" font-style="italic">Interactions Myt</text>
+<text x="522" y="358" text-anchor="middle" font-size="11" fill="#185FA5" font-style="italic">(nature, animaux)</text>
+
+<!-- Légende -->
+<text x="340" y="415" text-anchor="middle" font-size="13" fill="#2C2C2A" font-weight="500">Zoom in ↓ Zoom out ↑ — Sans chargement — Le joueur choisit son rythme à tout moment</text>
+<text x="340" y="435" text-anchor="middle" font-size="11" fill="#888780">Caméras : smartcam (cinématique auto sur spline) + rearview (vue arrière)</text>
+</svg>
