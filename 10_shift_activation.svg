@@ -1,0 +1,95 @@
+<svg width="1360" height="800" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<text x="340" y="20" text-anchor="middle" font-size="14" fill="#2C2C2A" font-weight="600">Storyboard — Activation de [SHIFT+] : ce que le joueur voit vs ce qui se passe</text>
+
+<!-- Case 1: Monde sensible (SHIFT+ OFF) -->
+<rect x="20" y="38" width="310" height="160" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="30" y="55" font-size="10" fill="#412402" font-weight="500">Case 1 — [SHIFT+] désactivé : monde sensible</text>
+
+<!-- Rue avec bâtiments -->
+<rect x="40" y="100" width="40" height="80" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<rect x="90" y="85" width="35" height="95" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<rect x="240" y="95" width="50" height="85" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<line x1="40" y1="180" x2="310" y2="180" stroke="#B4B2A9" stroke-width="1"/>
+
+<!-- Kahay qui marche -->
+<circle cx="170" cy="155" r="14" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+<text x="170" y="159" text-anchor="middle" font-size="11" fill="#993556" font-weight="500">K</text>
+<line x1="170" y1="169" x2="170" y2="190" stroke="#D4537E" stroke-width="1.5"/>
+
+<!-- NPC visible normal -->
+<circle cx="220" cy="160" r="10" fill="#F1EFE8" stroke="#888780" stroke-width="1"/>
+<text x="220" y="164" text-anchor="middle" font-size="9" fill="#5F5E5A">N</text>
+
+<rect x="130" y="70" width="80" height="20" rx="4" fill="#EAF3DE" stroke="none"/>
+<text x="170" y="84" text-anchor="middle" font-size="10" fill="#27500A">🔋 Batterie ✓</text>
+
+<!-- Flèche -->
+<text x="340" y="120" text-anchor="middle" font-size="20" fill="#D4537E">→</text>
+<text x="340" y="140" text-anchor="middle" font-size="10" fill="#D4537E" font-weight="500">SHIFT+</text>
+<text x="340" y="152" text-anchor="middle" font-size="10" fill="#D4537E">activé !</text>
+
+<!-- Case 2: Monde du Ba (SHIFT+ ON) -->
+<rect x="350" y="38" width="310" height="160" rx="6" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+<text x="360" y="55" font-size="10" fill="#4B1528" font-weight="500">Case 2 — [SHIFT+] activé : Monde du Ba superposé</text>
+
+<!-- Mêmes bâtiments mais avec overlay -->
+<rect x="370" y="100" width="40" height="80" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<rect x="420" y="85" width="35" height="95" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<rect x="570" y="95" width="50" height="85" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<line x1="370" y1="180" x2="640" y2="180" stroke="#B4B2A9" stroke-width="1"/>
+
+<!-- Overlay virtuel : pubs, infos -->
+<rect x="375" y="108" width="30" height="15" rx="2" fill="#D4537E" opacity="0.3" stroke="none"/>
+<text x="390" y="119" text-anchor="middle" font-size="7" fill="#993556">PUB</text>
+<rect x="465" y="90" width="25" height="12" rx="2" fill="#D4537E" opacity="0.3" stroke="none"/>
+<text x="477" y="100" text-anchor="middle" font-size="7" fill="#993556">AD</text>
+<rect x="575" y="100" width="40" height="12" rx="2" fill="#378ADD" opacity="0.3" stroke="none"/>
+<text x="595" y="110" text-anchor="middle" font-size="7" fill="#185FA5">NAV→</text>
+
+<!-- Kahay avec Ba avatar -->
+<circle cx="500" cy="150" r="14" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+<text x="500" y="154" text-anchor="middle" font-size="11" fill="#993556" font-weight="500">Ba</text>
+<line x1="500" y1="164" x2="500" y2="185" stroke="#D4537E" stroke-width="1.5"/>
+
+<!-- Ennemi VISIBLE maintenant -->
+<circle cx="550" cy="155" r="12" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1.5"/>
+<text x="550" y="159" text-anchor="middle" font-size="10" fill="#E24B4A" font-weight="600">!</text>
+<text x="550" y="180" font-size="8" fill="#E24B4A">ennemi visible</text>
+
+<!-- Jauge SP qui baisse -->
+<rect x="460" y="70" width="90" height="20" rx="4" fill="#E6F1FB" stroke="none"/>
+<text x="505" y="84" text-anchor="middle" font-size="10" fill="#185FA5">🔵 SP ████░░ ↓</text>
+
+<!-- Case 3: LE SECRET -->
+<rect x="20" y="215" width="640" height="160" rx="8" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1.5" stroke-dasharray="6 3"/>
+<text x="340" y="235" text-anchor="middle" font-size="13" fill="#501313" font-weight="600">Case 3 — CE QUE LE JOUEUR NE SAIT PAS (le secret ontologique)</text>
+
+<!-- Le monde invisible réel -->
+<rect x="40" y="250" width="280" height="110" rx="6" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+<text x="180" y="268" text-anchor="middle" font-size="11" fill="#042C53" font-weight="500">Ce qui se passe RÉELLEMENT :</text>
+<!-- Ka dans le monde invisible -->
+<circle cx="100" cy="310" r="14" fill="#E6F1FB" stroke="#378ADD" stroke-width="1.5" stroke-dasharray="3 2"/>
+<text x="100" y="314" text-anchor="middle" font-size="11" fill="#185FA5" font-weight="500">Ka</text>
+<text x="100" y="335" font-size="8" fill="#185FA5" text-anchor="middle">double éthéré</text>
+
+<!-- Morts autour -->
+<circle cx="170" cy="300" r="10" fill="none" stroke="#E24B4A" stroke-width="0.5" stroke-dasharray="2 2"/>
+<text x="170" y="304" text-anchor="middle" font-size="9">💀</text>
+<circle cx="200" cy="320" r="10" fill="none" stroke="#E24B4A" stroke-width="0.5" stroke-dasharray="2 2"/>
+<text x="200" y="324" text-anchor="middle" font-size="9">👻</text>
+<circle cx="240" cy="295" r="10" fill="none" stroke="#E24B4A" stroke-width="0.5" stroke-dasharray="2 2"/>
+<text x="240" y="299" text-anchor="middle" font-size="9">💀</text>
+
+<text x="170" y="355" text-anchor="middle" font-size="9" fill="#185FA5">Monde invisible (brèche ouverte avec l'inframonde)</text>
+
+<!-- Explication -->
+<rect x="340" y="250" width="300" height="110" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+<text x="490" y="275" text-anchor="middle" font-size="11" fill="#791F1F">Le joueur pense être dans</text>
+<text x="490" y="292" text-anchor="middle" font-size="11" fill="#791F1F">un metavers fun. En réalité :</text>
+<text x="490" y="315" text-anchor="middle" font-size="11" fill="#501313" font-weight="600">Son Ka confronte les morts.</text>
+<text x="490" y="335" text-anchor="middle" font-size="11" fill="#501313" font-weight="600">On ressent, on ne voit pas.</text>
+<text x="490" y="352" text-anchor="middle" font-size="10" fill="#A32D2D">→ SP baissent = exposition aux morts</text>
+
+<!-- Conclusion -->
+<text x="340" y="395" text-anchor="middle" font-size="11" fill="#2C2C2A" font-weight="500" font-style="italic">Les publicités et sollicitations masquent la réalité invisible. Le « fun » cache l'horreur ontologique.</text>
+</svg>
