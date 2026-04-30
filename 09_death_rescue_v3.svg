@@ -1,0 +1,154 @@
+<svg width="1400" height="1400" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+
+<text x="350" y="24" text-anchor="middle" font-size="16" fill="#2C2C2A" font-weight="700">Quand un personnage meurt — étape par étape</text>
+
+<!-- ==================== CASE 1 : IL TOMBE ==================== -->
+<rect x="15" y="40" width="330" height="190" rx="10" fill="#FCEBEB" stroke="#E24B4A" stroke-width="2"/>
+<rect x="20" y="44" width="50" height="24" rx="5" fill="#E24B4A"/>
+<text x="45" y="61" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">1</text>
+
+<!-- Sol -->
+<line x1="40" y1="190" x2="320" y2="190" stroke="#B4B2A9" stroke-width="2"/>
+
+<!-- Personnage allongé au sol (clairement mort) -->
+<circle cx="130" cy="175" r="20" fill="#FAEEDA" stroke="#E24B4A" stroke-width="2.5"/>
+<!-- Yeux en X -->
+<line x1="122" y1="168" x2="132" y2="178" stroke="#A32D2D" stroke-width="2.5"/>
+<line x1="132" y1="168" x2="122" y2="178" stroke="#A32D2D" stroke-width="2.5"/>
+<line x1="128" y1="168" x2="138" y2="178" stroke="#A32D2D" stroke-width="2.5"/>
+<line x1="138" y1="168" x2="128" y2="178" stroke="#A32D2D" stroke-width="2.5"/>
+<!-- Corps allongé -->
+<line x1="150" y1="180" x2="220" y2="185" stroke="#EF9F27" stroke-width="3"/>
+<line x1="160" y1="175" x2="190" y2="165" stroke="#EF9F27" stroke-width="3"/>
+<line x1="220" y1="185" x2="250" y2="195" stroke="#EF9F27" stroke-width="3"/>
+<line x1="220" y1="185" x2="240" y2="175" stroke="#EF9F27" stroke-width="3"/>
+
+<!-- Barre HP vide -->
+<rect x="50" y="80" width="200" height="22" rx="6" fill="#501313" stroke="#E24B4A" stroke-width="1"/>
+<text x="150" y="96" text-anchor="middle" font-size="12" fill="#E24B4A" font-weight="700">❤️ HP ░░░░░░░░░░░░░░ 0</text>
+
+<text x="175" y="220" text-anchor="middle" font-size="16" fill="#A32D2D" font-weight="700">Il est mort.</text>
+
+<!-- ==================== CASE 2 : FANTÔME SORT ==================== -->
+<rect x="355" y="40" width="330" height="190" rx="10" fill="#E6F1FB" stroke="#378ADD" stroke-width="2"/>
+<rect x="360" y="44" width="50" height="24" rx="5" fill="#378ADD"/>
+<text x="385" y="61" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">2</text>
+
+<!-- Corps au sol (petit, flou) -->
+<circle cx="430" cy="195" r="12" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="1" opacity="0.4"/>
+<line x1="442" y1="198" x2="475" y2="200" stroke="#B4B2A9" stroke-width="2" opacity="0.3"/>
+
+<!-- Grand fantôme qui s'élève -->
+<ellipse cx="530" cy="130" rx="40" ry="50" fill="none" stroke="#378ADD" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+<circle cx="530" cy="110" r="24" fill="#E6F1FB" stroke="#378ADD" stroke-width="2.5"/>
+<!-- Yeux fantôme -->
+<circle cx="522" cy="106" r="4" fill="#185FA5"/>
+<circle cx="538" cy="106" r="4" fill="#185FA5"/>
+<ellipse cx="530" cy="120" rx="6" ry="4" fill="#185FA5"/>
+<!-- Queue de fantôme -->
+<path d="M505 160 Q510 180 520 175 Q530 185 540 175 Q550 180 555 160" fill="none" stroke="#378ADD" stroke-width="2" stroke-dasharray="4 3"/>
+
+<!-- Flèche vers le haut -->
+<line x1="530" y1="75" x2="530" y2="55" stroke="#378ADD" stroke-width="2.5" marker-end="url(#bluearr)"/>
+<defs><marker id="bluearr" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 10 L5 0 L10 10" fill="#378ADD"/></marker></defs>
+
+<text x="520" y="220" text-anchor="middle" font-size="16" fill="#185FA5" font-weight="700">Son fantôme sort du corps.</text>
+
+<!-- ==================== CASE 3 : L'ÂME S'ENFUIT ==================== -->
+<rect x="15" y="245" width="330" height="190" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="2"/>
+<rect x="20" y="249" width="50" height="24" rx="5" fill="#534AB7"/>
+<text x="45" y="266" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">3</text>
+
+<!-- Grand oiseau qui fuit -->
+<text x="100" y="340" text-anchor="middle" font-size="56">🦅</text>
+
+<!-- Lignes de vitesse -->
+<line x1="55" y1="320" x2="25" y2="320" stroke="#534AB7" stroke-width="2"/>
+<line x1="60" y1="335" x2="20" y2="335" stroke="#534AB7" stroke-width="1.5"/>
+<line x1="55" y1="350" x2="30" y2="350" stroke="#534AB7" stroke-width="1"/>
+
+<!-- Flèche direction -->
+<line x1="140" y1="320" x2="260" y2="290" stroke="#534AB7" stroke-width="3" stroke-dasharray="8 5"/>
+<text x="280" y="295" font-size="14" fill="#534AB7" font-weight="600">→ inframonde</text>
+
+<!-- Timer urgence -->
+<rect x="170" y="350" width="150" height="40" rx="10" fill="#FCEBEB" stroke="#E24B4A" stroke-width="2"/>
+<text x="245" y="375" text-anchor="middle" font-size="16" fill="#E24B4A" font-weight="700">⏱️ VITE !</text>
+
+<text x="175" y="425" text-anchor="middle" font-size="15" fill="#534AB7" font-weight="700">L'âme s'enfuit. Faut la rattraper !</text>
+
+<!-- ==================== CASE 4 : PORTER LE CORPS ==================== -->
+<rect x="355" y="245" width="330" height="190" rx="10" fill="#FAEEDA" stroke="#EF9F27" stroke-width="2"/>
+<rect x="360" y="249" width="50" height="24" rx="5" fill="#EF9F27"/>
+<text x="385" y="266" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">4</text>
+
+<!-- Sol -->
+<line x1="380" y1="400" x2="660" y2="400" stroke="#B4B2A9" stroke-width="2"/>
+
+<!-- Antef qui marche avec quelqu'un sur le dos -->
+<circle cx="470" cy="330" r="22" fill="#FAECE7" stroke="#D85A30" stroke-width="3"/>
+<!-- Visage déterminé -->
+<circle cx="462" cy="325" r="3" fill="#4A1B0C"/>
+<circle cx="478" cy="325" r="3" fill="#4A1B0C"/>
+<line x1="462" y1="340" x2="478" y2="340" stroke="#4A1B0C" stroke-width="2" stroke-linecap="round"/>
+<!-- Corps d'Antef -->
+<line x1="470" y1="352" x2="470" y2="385" stroke="#D85A30" stroke-width="3"/>
+<line x1="455" y1="368" x2="485" y2="365" stroke="#D85A30" stroke-width="3"/>
+<line x1="458" y1="385" x2="450" y2="400" stroke="#D85A30" stroke-width="3"/>
+<line x1="482" y1="385" x2="490" y2="400" stroke="#D85A30" stroke-width="3"/>
+<!-- Hetep sur son dos -->
+<circle cx="495" cy="320" r="14" fill="#FAEEDA" stroke="#888780" stroke-width="1.5" opacity="0.6"/>
+<line x1="489" y1="316" x2="495" y2="322" stroke="#888780" stroke-width="1.5" opacity="0.5"/>
+<line x1="495" y1="316" x2="501" y2="322" stroke="#888780" stroke-width="1.5" opacity="0.5"/>
+<line x1="495" y1="334" x2="510" y2="350" stroke="#888780" stroke-width="2" opacity="0.5"/>
+
+<!-- Direction de marche -->
+<line x1="500" y1="370" x2="530" y2="370" stroke="#D85A30" stroke-width="2" marker-end="url(#orangearr)"/>
+<defs><marker id="orangearr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10" fill="#D85A30"/></marker></defs>
+
+<!-- Lune -->
+<circle cx="620" cy="280" r="18" fill="#FAC775" stroke="none"/>
+
+<text x="520" y="425" text-anchor="middle" font-size="15" fill="#854F0B" font-weight="700">Porter le corps. Attendre la nuit.</text>
+
+<!-- ==================== CASE 5 : INFRAMONDE ==================== -->
+<rect x="15" y="450" width="670" height="235" rx="10" fill="#1a1a2e" stroke="#534AB7" stroke-width="2.5"/>
+<rect x="20" y="454" width="50" height="24" rx="5" fill="#534AB7"/>
+<text x="45" y="471" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">5</text>
+
+<text x="350" y="490" text-anchor="middle" font-size="16" fill="#85B7EB" font-weight="700">🌙 La nuit : descendre dans l'inframonde sauver l'âme</text>
+
+<!-- Ba oiseau à gauche -->
+<text x="80" y="570" text-anchor="middle" font-size="40">🦅</text>
+<text x="80" y="600" text-anchor="middle" font-size="11" fill="#85B7EB">toi</text>
+
+<!-- Chemin avec monstres bien gros et espacés -->
+<line x1="120" y1="565" x2="530" y2="565" stroke="#534AB7" stroke-width="2" stroke-dasharray="10 6"/>
+
+<!-- Monstre 1 -->
+<circle cx="200" cy="560" r="22" fill="#2C2C2A" stroke="#E24B4A" stroke-width="2.5"/>
+<text x="200" y="568" text-anchor="middle" font-size="22">👹</text>
+
+<!-- Monstre 2 -->
+<circle cx="310" cy="560" r="20" fill="#2C2C2A" stroke="#E24B4A" stroke-width="2.5"/>
+<text x="310" y="568" text-anchor="middle" font-size="20">👻</text>
+
+<!-- Monstre 3 -->
+<circle cx="420" cy="560" r="24" fill="#2C2C2A" stroke="#E24B4A" stroke-width="2.5"/>
+<text x="420" y="568" text-anchor="middle" font-size="24">💀</text>
+
+<!-- Porte fermée au bout -->
+<rect x="560" y="520" width="110" height="100" rx="10" fill="#2C2C2A" stroke="#E24B4A" stroke-width="3"/>
+<text x="615" y="560" text-anchor="middle" font-size="30">🔒</text>
+<text x="615" y="590" text-anchor="middle" font-size="13" fill="#E24B4A" font-weight="700">TRIBUNAL</text>
+<text x="615" y="608" text-anchor="middle" font-size="12" fill="#E24B4A">FERMÉ</text>
+
+<!-- Ba de Hetep coincé devant la porte -->
+<circle cx="545" cy="575" r="14" fill="#FAEEDA" stroke="#EF9F27" stroke-width="2"/>
+<text x="545" y="580" text-anchor="middle" font-size="12" fill="#854F0B" font-weight="600">Ba</text>
+<text x="545" y="555" text-anchor="middle" font-size="12" fill="#EF9F27">← sauver</text>
+
+<!-- Warning en bas -->
+<rect x="100" y="640" width="500" height="32" rx="8" fill="#501313"/>
+<text x="350" y="661" text-anchor="middle" font-size="14" fill="#E24B4A" font-weight="700">⚠️ Plus tu attends → plus l'âme est sauvage → plus c'est dur</text>
+</svg>
