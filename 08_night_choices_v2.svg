@@ -1,80 +1,92 @@
-<svg width="1400" height="520" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 26px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 13px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+      .body { stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+    </style>
+  </defs>
+  
+  <text x="600" y="35" font-size="22" font-weight="bold" fill="#1A237E" text-anchor="middle">LA NUIT — 3 CHOIX PAR PERSONNAGE</text>
+  <text x="600" y="55" font-size="14" fill="#666" text-anchor="middle">22h–minuit : que fait chacun ?</text>
 
-<text x="350" y="22" text-anchor="middle" font-size="15" fill="#2C2C2A" font-weight="700">22h — Que fait chaque personnage cette nuit ?</text>
+  <!-- Panel 1: Continue playing (night action) -->
+  <rect class="panel" x="15" y="70" width="380" height="400"/>
+  <text class="num" x="30" y="100">1</text>
+  <text x="205" y="98" font-size="15" font-weight="bold" fill="#FF8F00">CONTINUER LA NUIT</text>
+  <!-- Dark city scene -->
+  <rect x="18" y="115" width="374" height="220" rx="8" fill="#1A237E" opacity="0.15"/>
+  <!-- Moon -->
+  <circle cx="350" cy="145" r="18" fill="#FFF9C4"/>
+  <circle cx="356" cy="140" r="15" fill="#1A237E" opacity="0.15"/>
+  <!-- Anubis hunting at night -->
+  <circle cx="120" cy="240" r="22" fill="#37474F" stroke="#2C1810" stroke-width="2"/>
+  <text x="112" y="248" font-size="20">😈</text>
+  <line class="body" x1="120" y1="262" x2="120" y2="310"/>
+  <line class="body" x1="120" y1="280" x2="95" y2="295"/>
+  <line class="body" x1="120" y1="280" x2="145" y2="265"/>
+  <line class="body" x1="120" y1="310" x2="105" y2="335"/>
+  <line class="body" x1="120" y1="310" x2="140" y2="330"/>
+  <text x="100" y="355" font-size="10" fill="#37474F" font-weight="bold">Anubis chasse</text>
+  <!-- Target NPC hiding -->
+  <circle cx="280" cy="260" r="16" fill="#A5D6A7" stroke="#2C1810" stroke-width="2" opacity="0.7"/>
+  <text x="273" y="267" font-size="14">😨</text>
+  <!-- Crosshair -->
+  <circle cx="280" cy="260" r="25" fill="none" stroke="#C62828" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Consequences -->
+  <rect x="40" y="370" width="330" height="70" rx="6" fill="#FFF3E0" stroke="#FF8F00" stroke-width="1.5"/>
+  <text x="60" y="390" font-size="11" fill="#E65100">⬆️ XP + récompenses rares</text>
+  <text x="60" y="408" font-size="11" fill="#C62828">⬇️ Pas de repos → malus demain</text>
+  <text x="60" y="425" font-size="11" fill="#C62828">😴 Fatigue + humeur → tensions</text>
+  <text class="label" x="205" y="455">RISQUE / RÉCOMPENSE</text>
 
-<!-- ===== CONTINUER ===== -->
-<rect x="10" y="40" width="220" height="210" rx="8" fill="#1a1a2e" stroke="#378ADD" stroke-width="2"/>
-<!-- Lune -->
-<circle cx="190" cy="65" r="15" fill="#FAC775" stroke="none"/>
+  <!-- Panel 2: Sleep -->
+  <rect class="panel" x="410" y="70" width="380" height="400"/>
+  <text class="num" x="425" y="100">2</text>
+  <text x="600" y="98" font-size="15" font-weight="bold" fill="#4CAF50">DORMIR</text>
+  <!-- Peaceful night -->
+  <rect x="413" y="115" width="374" height="220" rx="8" fill="#1A237E" opacity="0.08"/>
+  <!-- Stars -->
+  <text x="500" y="145" font-size="10" fill="#FFD54F">★</text>
+  <text x="600" y="135" font-size="8" fill="#FFD54F">★</text>
+  <text x="700" y="148" font-size="12" fill="#FFD54F">★</text>
+  <!-- Character sleeping peacefully -->
+  <circle cx="560" cy="230" r="24" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="551" y="238" font-size="22">😴</text>
+  <!-- Bed -->
+  <line x1="510" y1="280" x2="610" y2="280" stroke="#8D6E63" stroke-width="5"/>
+  <rect x="510" y="260" width="100" height="20" rx="3" fill="#E8D5B7" stroke="#8D6E63" stroke-width="1"/>
+  <!-- Zzz -->
+  <text x="590" y="215" font-size="14" fill="#5C6BC0" font-weight="bold">Z</text>
+  <text x="605" y="200" font-size="18" fill="#5C6BC0" font-weight="bold">Z</text>
+  <text x="625" y="185" font-size="22" fill="#5C6BC0" font-weight="bold">Z</text>
+  <!-- Recovery bars -->
+  <rect x="440" y="370" width="330" height="70" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="460" y="390" font-size="11" fill="#2E7D32">❤️ HP → 100%</text>
+  <text x="460" y="408" font-size="11" fill="#2E7D32">🧠 SP → 100% (SEUL moyen !)</text>
+  <text x="460" y="425" font-size="11" fill="#2E7D32">🔋 Batterie [SHIFT+] → 100%</text>
+  <text class="label" x="600" y="455">VITAL POUR LES SP</text>
 
-<!-- Anubis sur un toit (gros) -->
-<rect x="30" y="155" width="180" height="10" fill="#333" stroke="none"/>
-<rect x="60" y="120" width="40" height="45" fill="#333" stroke="none"/>
-<rect x="140" y="130" width="50" height="35" fill="#333" stroke="none"/>
-
-<circle cx="100" cy="110" r="22" fill="#1a1a2e" stroke="#378ADD" stroke-width="3"/>
-<text x="100" y="118" text-anchor="middle" font-size="14" fill="#85B7EB" font-weight="700">An</text>
-<!-- Corps accroupi -->
-<line x1="100" y1="132" x2="100" y2="150" stroke="#378ADD" stroke-width="3"/>
-<!-- Cape -->
-<path d="M82 120 L75 150 L125 150 L118 120" fill="none" stroke="#378ADD" stroke-width="1.5" opacity="0.5"/>
-
-<!-- Cible en bas -->
-<circle cx="170" cy="175" r="10" fill="none" stroke="#E24B4A" stroke-width="1.5"/>
-<text x="170" y="179" text-anchor="middle" font-size="10">🏃</text>
-
-<text x="115" y="195" text-anchor="middle" font-size="14" fill="#85B7EB" font-weight="700">🌙 CHASSER</text>
-<text x="115" y="212" text-anchor="middle" font-size="11" fill="#85B7EB">+XP, missions nocturnes</text>
-<text x="115" y="228" text-anchor="middle" font-size="11" fill="#E24B4A">Pas de repos → SP ↓↓</text>
-
-<!-- ===== DORMIR ===== -->
-<rect x="240" y="40" width="220" height="210" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="2"/>
-
-<!-- Hetep dort (gros) -->
-<circle cx="350" cy="110" r="28" fill="#EAF3DE" stroke="#639922" stroke-width="3"/>
-<!-- Yeux fermés -->
-<line x1="337" y1="105" x2="347" y2="105" stroke="#27500A" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="353" y1="105" x2="363" y2="105" stroke="#27500A" stroke-width="2.5" stroke-linecap="round"/>
-<!-- Bouche endormie -->
-<path d="M343 118 Q350 122 357 118" fill="none" stroke="#27500A" stroke-width="2" stroke-linecap="round"/>
-<!-- ZZZ -->
-<text x="380" y="90" font-size="18" fill="#639922" font-weight="600">Z</text>
-<text x="395" y="78" font-size="14" fill="#639922" font-weight="600">z</text>
-<text x="405" y="70" font-size="10" fill="#639922" font-weight="600">z</text>
-
-<!-- Lit -->
-<rect x="280" y="140" width="140" height="30" rx="8" fill="#d4eabd" stroke="#639922" stroke-width="1"/>
-
-<!-- Barres qui remontent -->
-<text x="290" y="195" font-size="11" fill="#27500A">❤️ HP  █████████░ ↑</text>
-<text x="290" y="212" font-size="11" fill="#185FA5">🔵 SP  ██████████ FULL</text>
-
-<text x="350" y="235" text-anchor="middle" font-size="14" fill="#27500A" font-weight="700">💤 DORMIR</text>
-<text x="350" y="248" text-anchor="middle" font-size="10" fill="#27500A">Seul moyen de récup SP</text>
-
-<!-- ===== VOYAGE ASTRAL ===== -->
-<rect x="470" y="40" width="220" height="210" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="2"/>
-
-<!-- Personnage endormi petit -->
-<circle cx="520" cy="175" r="12" fill="#F1EFE8" stroke="#888780" stroke-width="1" opacity="0.5"/>
-<line x1="520" y1="187" x2="520" y2="200" stroke="#888780" stroke-width="1" opacity="0.5"/>
-<text x="540" y="195" font-size="9" fill="#888780">dort</text>
-
-<!-- Ba oiseau GROS qui vole -->
-<circle cx="580" cy="100" r="30" fill="#EEEDFE" stroke="#7F77DD" stroke-width="3" stroke-dasharray="5 3"/>
-<text x="580" y="95" text-anchor="middle" font-size="28">🦅</text>
-<!-- Ailes -->
-<line x1="550" y1="90" x2="530" y2="75" stroke="#7F77DD" stroke-width="2"/>
-<line x1="610" y1="90" x2="630" y2="75" stroke="#7F77DD" stroke-width="2"/>
-
-<!-- Lien entre les deux -->
-<line x1="530" y1="170" x2="565" y2="130" stroke="#534AB7" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
-
-<!-- Options -->
-<text x="580" y="155" text-anchor="middle" font-size="11" fill="#534AB7">🎮 Mini-jeux</text>
-<text x="580" y="170" text-anchor="middle" font-size="11" fill="#534AB7">⏪ Retour passé</text>
-<text x="580" y="185" text-anchor="middle" font-size="11" fill="#534AB7">💀 Sauver âme</text>
-
-<text x="580" y="235" text-anchor="middle" font-size="14" fill="#534AB7" font-weight="700">🦅 VOYAGE ASTRAL</text>
-<text x="580" y="248" text-anchor="middle" font-size="10" fill="#534AB7">L'esprit s'envole</text>
+  <!-- Panel 3: Ba astral journey -->
+  <rect class="panel" x="805" y="70" width="380" height="400"/>
+  <text class="num" x="820" y="100">3</text>
+  <text x="995" y="98" font-size="15" font-weight="bold" fill="#7E57C2">VOYAGE ASTRAL (Ba)</text>
+  <!-- Ethereal space -->
+  <rect x="808" y="115" width="374" height="220" rx="8" fill="#EDE7F6"/>
+  <!-- Sleeping body -->
+  <circle cx="870" cy="290" r="16" fill="#FFD54F" stroke="#2C1810" stroke-width="2" opacity="0.5"/>
+  <text x="863" y="297" font-size="14" opacity="0.5">😴</text>
+  <!-- Ba bird flying -->
+  <circle cx="1000" cy="190" r="20" fill="#CE93D8" stroke="#7E57C2" stroke-width="2"/>
+  <text x="992" y="197" font-size="18">🐦</text>
+  <!-- Motion trail -->
+  <path d="M870,275 C900,240 950,210 980,195" fill="none" stroke="#7E57C2" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Three sub-options -->
+  <rect x="830" y="370" width="330" height="85" rx="6" fill="#EDE7F6" stroke="#7E57C2" stroke-width="1.5"/>
+  <text x="850" y="390" font-size="11" fill="#4A148C">🎮 Mini-jeux → XP, objets, skills</text>
+  <text x="850" y="410" font-size="11" fill="#4A148C">⏪ Revenir dans le passé (refaire)</text>
+  <text x="850" y="428" font-size="11" fill="#4A148C">💀 Sauver l'âme d'un mort</text>
+  <text x="850" y="445" font-size="9" fill="#C62828">   + Ba valide l'XP acquise dans la journée</text>
+  <text class="label" x="995" y="458">3 POUVOIRS NOCTURNES</text>
 </svg>

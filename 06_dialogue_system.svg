@@ -1,108 +1,139 @@
-<svg width="1360" height="1000" viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 26px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 14px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+      .body { stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+      .head { fill: #FFD54F; stroke: #2C1810; stroke-width: 2; }
+      .bubble { fill: white; stroke: #2C1810; stroke-width: 1.5; rx: 8; }
+    </style>
+  </defs>
+  
+  <text x="600" y="35" font-size="24" font-weight="bold" fill="#1A237E" text-anchor="middle">SYSTÈME DE DIALOGUE — LE DIALOGUE EST DU GAMEPLAY</text>
 
-<text x="340" y="22" text-anchor="middle" font-size="16" fill="#2C2C2A" font-weight="600">Système de dialogue — Le dialogue est du gameplay</text>
-<text x="340" y="42" text-anchor="middle" font-size="12" fill="#888780">Tour par tour impliquant toute l'équipe</text>
-<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+  <!-- Panel 1: Approach + Scan -->
+  <rect class="panel" x="20" y="55" width="570" height="340"/>
+  <text class="num" x="40" y="85">1</text>
+  <text x="180" y="82" font-size="15" font-weight="bold" fill="#1A237E">APPROCHE — Scanner avant de parler</text>
+  <!-- Kahay scanning -->
+  <circle cx="120" cy="200" r="22" fill="#FFB6C1" stroke="#2C1810" stroke-width="2"/>
+  <text x="111" y="208" font-size="20">😏</text>
+  <line class="body" x1="120" y1="222" x2="120" y2="270"/>
+  <line class="body" x1="120" y1="242" x2="98" y2="255"/>
+  <line class="body" x1="120" y1="242" x2="142" y2="255"/>
+  <line class="body" x1="120" y1="270" x2="105" y2="300"/>
+  <line class="body" x1="120" y1="270" x2="135" y2="300"/>
+  <text x="100" y="320" font-size="11" fill="#E91E63" font-weight="bold">Kahay</text>
+  <!-- Scan beam -->
+  <line x1="142" y1="200" x2="260" y2="200" stroke="#00BCD4" stroke-width="2" stroke-dasharray="6,3" opacity="0.6"/>
+  <!-- NPC being scanned -->
+  <circle cx="300" cy="200" r="22" fill="#A5D6A7" stroke="#2C1810" stroke-width="2"/>
+  <text x="292" y="208" font-size="20">🤔</text>
+  <line x1="300" y1="222" x2="300" y2="270" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="300" y1="242" x2="278" y2="258" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="300" y1="242" x2="322" y2="258" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Scan result popup -->
+  <rect x="340" y="150" width="220" height="100" rx="8" fill="#E0F7FA" stroke="#00BCD4" stroke-width="1.5"/>
+  <text x="355" y="172" font-size="11" fill="#006064">🔍 Importance : ⭐⭐⭐</text>
+  <text x="355" y="192" font-size="11" fill="#006064">📋 Quête potentielle</text>
+  <text x="355" y="212" font-size="11" fill="#E65100">⚠️ Peut mentir</text>
+  <text x="355" y="232" font-size="11" fill="#006064">💬 Sujets : 3 (à tiroir)</text>
+  <text class="label" x="305" y="375">Chaque perso scanne différemment</text>
 
-<!-- Phase 1 -->
-<rect x="40" y="60" width="600" height="30" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
-<text x="340" y="80" text-anchor="middle" font-size="13" fill="#412402" font-weight="600">Phase 1 — Scan pré-dialogue (avant d'aborder le NPC)</text>
+  <!-- Panel 2: Dialogue in action (buttons) -->
+  <rect class="panel" x="610" y="55" width="570" height="340"/>
+  <text class="num" x="630" y="85">2</text>
+  <text x="810" y="82" font-size="15" font-weight="bold" fill="#1A237E">EN DIALOGUE — Tour par tour</text>
+  <!-- Hero talking to NPC -->
+  <circle class="head" cx="720" cy="190" r="20"/>
+  <text x="712" y="197" font-size="18">😊</text>
+  <line class="body" x1="720" y1="210" x2="720" y2="255"/>
+  <!-- Speech bubble -->
+  <rect class="bubble" x="740" y="150" width="100" height="35"/>
+  <text x="760" y="173" font-size="12" fill="#2C1810">Où est...?</text>
+  <!-- NPC -->
+  <circle cx="870" cy="190" r="20" fill="#A5D6A7" stroke="#2C1810" stroke-width="2"/>
+  <text x="862" y="197" font-size="18">🙄</text>
+  <line x1="870" y1="210" x2="870" y2="255" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Controller buttons -->
+  <rect x="660" y="280" width="280" height="80" rx="10" fill="#37474F" opacity="0.1"/>
+  <circle cx="720" cy="310" r="18" fill="#4CAF50" stroke="#2C7D32" stroke-width="2"/>
+  <text x="713" y="315" font-size="12" fill="white" font-weight="bold">A</text>
+  <text x="710" y="335" font-size="9" fill="#2C1810" text-anchor="middle">Parler</text>
+  <circle cx="780" cy="310" r="18" fill="#F44336" stroke="#C62828" stroke-width="2"/>
+  <text x="775" y="315" font-size="12" fill="white" font-weight="bold">B</text>
+  <text x="780" y="335" font-size="9" fill="#2C1810" text-anchor="middle">Annuler</text>
+  <circle cx="840" cy="310" r="18" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+  <text x="835" y="315" font-size="12" fill="white" font-weight="bold">X</text>
+  <text x="840" y="335" font-size="9" fill="#2C1810" text-anchor="middle">Spécial</text>
+  <circle cx="900" cy="310" r="18" fill="#FFC107" stroke="#F9A825" stroke-width="2"/>
+  <text x="895" y="315" font-size="12" fill="white" font-weight="bold">Y</text>
+  <text x="900" y="335" font-size="9" fill="#2C1810" text-anchor="middle">Penser</text>
+  <text class="label" x="895" y="375">4 boutons = 4 interactions</text>
 
-<!-- Scan grid -->
-<rect x="40" y="100" width="127" height="52" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
-<text x="103" y="120" text-anchor="middle" font-size="11" fill="#4A1B0C" font-weight="500">Antef [SHIFT+]</text>
-<text x="103" y="138" text-anchor="middle" font-size="10" fill="#993C1D">Fichés, débiteurs</text>
+  <!-- Panel 3: Team intervenes (D-PAD) -->
+  <rect class="panel" x="20" y="430" width="570" height="340"/>
+  <text class="num" x="40" y="460">3</text>
+  <text x="200" y="457" font-size="15" font-weight="bold" fill="#1A237E">L'ÉQUIPE INTERVIENT (D-PAD)</text>
+  <!-- Main speaker (Hetep talking) -->
+  <circle cx="120" cy="560" r="18" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="112" y="567" font-size="16">🗣️</text>
+  <text x="108" y="600" font-size="10" fill="#2C1810" font-weight="bold">Hetep</text>
+  <!-- NPC -->
+  <circle cx="280" cy="560" r="18" fill="#A5D6A7" stroke="#2C1810" stroke-width="2"/>
+  <text x="272" y="567" font-size="16">😬</text>
+  <!-- Speech between them -->
+  <line x1="138" y1="555" x2="262" y2="555" stroke="#2C1810" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Team members with icons (around D-PAD concept) -->
+  <!-- Anubis (up) wants to intervene -->
+  <circle cx="420" cy="490" r="16" fill="#37474F" stroke="#2C1810" stroke-width="2"/>
+  <text x="413" y="497" font-size="14">😤</text>
+  <text x="405" y="515" font-size="9" fill="#2C1810">Anubis ↑</text>
+  <rect x="395" y="518" width="50" height="16" rx="4" fill="#FF9800" opacity="0.3"/>
+  <text x="400" y="530" font-size="8" fill="#E65100">💡 idée!</text>
+  <!-- Kahay (right) scanning -->
+  <circle cx="510" cy="560" r="16" fill="#FFB6C1" stroke="#2C1810" stroke-width="2"/>
+  <text x="503" y="567" font-size="14">🔍</text>
+  <text x="495" y="585" font-size="9" fill="#2C1810">Kahay →</text>
+  <rect x="485" y="588" width="55" height="16" rx="4" fill="#00BCD4" opacity="0.3"/>
+  <text x="490" y="600" font-size="8" fill="#006064">📡 scan</text>
+  <!-- Myt (down) -->
+  <circle cx="420" cy="640" r="16" fill="#C8E6C9" stroke="#2C1810" stroke-width="2"/>
+  <text x="413" y="647" font-size="14">🙏</text>
+  <text x="413" y="665" font-size="9" fill="#2C1810">Myt ↓</text>
+  <!-- D-PAD visual -->
+  <rect x="390" y="550" width="60" height="30" rx="4" fill="#455A64" opacity="0.2"/>
+  <text x="405" y="570" font-size="10" fill="#455A64" font-weight="bold">D-PAD</text>
+  <text class="label" x="305" y="750">Switch de perso à tout moment</text>
 
-<rect x="177" y="100" width="127" height="52" rx="6" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
-<text x="240" y="120" text-anchor="middle" font-size="11" fill="#4B1528" font-weight="500">Kahay [SHIFT+]</text>
-<text x="240" y="138" text-anchor="middle" font-size="10" fill="#993556">Importance NPC</text>
-
-<rect x="314" y="100" width="127" height="52" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
-<text x="377" y="120" text-anchor="middle" font-size="11" fill="#412402" font-weight="500">Hetep (instinct)</text>
-<text x="377" y="138" text-anchor="middle" font-size="10" fill="#854F0B">Louches (faillible)</text>
-
-<rect x="451" y="100" width="90" height="52" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="496" y="120" text-anchor="middle" font-size="11" fill="#04342C" font-weight="500">Myt</text>
-<text x="496" y="138" text-anchor="middle" font-size="10" fill="#0F6E56">Auras</text>
-
-<rect x="551" y="100" width="90" height="52" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="596" y="120" text-anchor="middle" font-size="11" fill="#26215C" font-weight="500">Hesat</text>
-<text x="596" y="138" text-anchor="middle" font-size="10" fill="#534AB7">Dieux (natif)</text>
-
-<line x1="340" y1="152" x2="340" y2="175" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-
-<!-- Phase 2 -->
-<rect x="40" y="175" width="600" height="30" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="340" y="195" text-anchor="middle" font-size="13" fill="#04342C" font-weight="600">Phase 2 — Mouvement d'approche</text>
-
-<!-- Approches -->
-<rect x="40" y="215" width="95" height="40" rx="6" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-<text x="87" y="233" text-anchor="middle" font-size="11" fill="#042C53" font-weight="500">Anubis</text>
-<text x="87" y="248" text-anchor="middle" font-size="10" fill="#185FA5">Braquer</text>
-
-<rect x="145" y="215" width="95" height="40" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
-<text x="192" y="233" text-anchor="middle" font-size="11" fill="#412402" font-weight="500">Hetep</text>
-<text x="192" y="248" text-anchor="middle" font-size="10" fill="#854F0B">Voler</text>
-
-<rect x="250" y="215" width="95" height="40" rx="6" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
-<text x="297" y="233" text-anchor="middle" font-size="11" fill="#4B1528" font-weight="500">Kahay</text>
-<text x="297" y="248" text-anchor="middle" font-size="10" fill="#993556">Pirater</text>
-
-<rect x="355" y="215" width="95" height="40" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
-<text x="402" y="233" text-anchor="middle" font-size="11" fill="#4A1B0C" font-weight="500">Antef</text>
-<text x="402" y="248" text-anchor="middle" font-size="10" fill="#993C1D">Réclamer</text>
-
-<rect x="460" y="215" width="85" height="40" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="502" y="233" text-anchor="middle" font-size="11" fill="#26215C" font-weight="500">Ounech</text>
-<text x="502" y="248" text-anchor="middle" font-size="10" fill="#534AB7">Interroger</text>
-
-<rect x="555" y="215" width="85" height="40" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="597" y="233" text-anchor="middle" font-size="11" fill="#04342C" font-weight="500">Myt</text>
-<text x="597" y="248" text-anchor="middle" font-size="10" fill="#0F6E56">Bénir</text>
-
-<line x1="340" y1="255" x2="340" y2="280" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-
-<!-- Phase 3 -->
-<rect x="40" y="280" width="600" height="30" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="340" y="300" text-anchor="middle" font-size="13" fill="#26215C" font-weight="600">Phase 3 — Dialogue tour par tour (contrôles manette)</text>
-
-<!-- Boutons -->
-<rect x="40" y="322" width="110" height="55" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
-<circle cx="65" cy="340" r="12" fill="#97C459" stroke="none"/>
-<text x="65" y="344" text-anchor="middle" font-size="10" fill="#173404" font-weight="600">A</text>
-<text x="105" y="340" text-anchor="middle" font-size="12" fill="#2C2C2A" font-weight="500">Parler</text>
-<text x="95" y="365" text-anchor="middle" font-size="10" fill="#5F5E5A">Répondre</text>
-
-<rect x="162" y="322" width="110" height="55" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
-<circle cx="187" cy="340" r="12" fill="#F09595" stroke="none"/>
-<text x="187" y="344" text-anchor="middle" font-size="10" fill="#501313" font-weight="600">B</text>
-<text x="227" y="340" text-anchor="middle" font-size="12" fill="#2C2C2A" font-weight="500">Annuler</text>
-<text x="217" y="365" text-anchor="middle" font-size="10" fill="#5F5E5A">Quitter</text>
-
-<rect x="284" y="322" width="110" height="55" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
-<circle cx="309" cy="340" r="12" fill="#85B7EB" stroke="none"/>
-<text x="309" y="344" text-anchor="middle" font-size="10" fill="#042C53" font-weight="600">X</text>
-<text x="349" y="340" text-anchor="middle" font-size="12" fill="#2C2C2A" font-weight="500">Spécial</text>
-<text x="339" y="365" text-anchor="middle" font-size="10" fill="#5F5E5A">Action unique</text>
-
-<rect x="406" y="322" width="110" height="55" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
-<circle cx="431" cy="340" r="12" fill="#FAC775" stroke="none"/>
-<text x="431" y="344" text-anchor="middle" font-size="10" fill="#412402" font-weight="600">Y</text>
-<text x="471" y="340" text-anchor="middle" font-size="12" fill="#2C2C2A" font-weight="500">Penser</text>
-<text x="461" y="365" text-anchor="middle" font-size="10" fill="#5F5E5A">Réflexion</text>
-
-<rect x="528" y="322" width="112" height="55" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.8"/>
-<text x="584" y="340" text-anchor="middle" font-size="12" fill="#4B1528" font-weight="600">D-PAD</text>
-<text x="584" y="365" text-anchor="middle" font-size="10" fill="#993556">Switch perso</text>
-
-<!-- Icônes équipe -->
-<rect x="40" y="392" width="600" height="55" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
-<text x="340" y="412" text-anchor="middle" font-size="12" fill="#412402" font-weight="500">Les personnages non joués se manifestent via des icônes pendant le dialogue :</text>
-<text x="150" y="435" text-anchor="middle" font-size="11" fill="#854F0B">💡 Suggestions/idées</text>
-<text x="340" y="435" text-anchor="middle" font-size="11" fill="#854F0B">❗ Info pertinente</text>
-<text x="530" y="435" text-anchor="middle" font-size="11" fill="#854F0B">🔄 Demande le relais</text>
-
-<!-- Principe -->
-<rect x="40" y="460" width="600" height="28" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-<text x="340" y="479" text-anchor="middle" font-size="12" fill="#27500A" font-weight="500" font-style="italic">Aucun personnage n'est inutile en dialogue. Le joueur peut élaborer des stratégies en temps réel.</text>
+  <!-- Panel 4: Strategy - double level of info -->
+  <rect class="panel" x="610" y="430" width="570" height="340"/>
+  <text class="num" x="630" y="460">4</text>
+  <text x="830" y="457" font-size="15" font-weight="bold" fill="#1A237E">STRATÉGIE — Double niveau d'info</text>
+  <!-- Hetep grilling NPC -->
+  <circle cx="720" cy="560" r="18" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="712" y="567" font-size="16">😈</text>
+  <text x="705" y="595" font-size="10" fill="#2C1810" font-weight="bold">Hetep cuisine</text>
+  <!-- NPC sweating -->
+  <circle cx="850" cy="560" r="18" fill="#A5D6A7" stroke="#2C1810" stroke-width="2"/>
+  <text x="842" y="567" font-size="16">😰</text>
+  <!-- Speech bubble with "blah" -->
+  <rect class="bubble" x="870" y="530" width="70" height="25"/>
+  <text x="885" y="548" font-size="10" fill="#2C1810">bla bla...</text>
+  <!-- Meanwhile: Kahay hacking from behind -->
+  <circle cx="1000" cy="600" r="16" fill="#FFB6C1" stroke="#2C1810" stroke-width="2"/>
+  <text x="993" y="607" font-size="14">😏</text>
+  <text x="985" y="625" font-size="9" fill="#E91E63" font-weight="bold">Kahay pirate</text>
+  <!-- SHIFT+ data being extracted -->
+  <rect x="960" y="530" width="140" height="60" rx="6" fill="#E0F7FA" stroke="#00BCD4" stroke-width="1.5"/>
+  <text x="975" y="548" font-size="10" fill="#006064">📡 [SHIFT+] du NPC</text>
+  <text x="975" y="565" font-size="10" fill="#C62828">🔓 DONNÉES SECRÈTES</text>
+  <text x="975" y="580" font-size="10" fill="#C62828">⚠️ Il ment !</text>
+  <!-- Result arrow -->
+  <text x="850" y="680" font-size="16" fill="#D4A843">↓</text>
+  <rect x="770" y="690" width="200" height="40" rx="8" fill="#FFF3E0" stroke="#FF8F00" stroke-width="2"/>
+  <text x="790" y="712" font-size="12" fill="#E65100" font-weight="bold">Confronter le NPC 💥</text>
+  <text x="790" y="725" font-size="10" fill="#E65100">avec les PREUVES</text>
+  <text class="label" x="895" y="755">Aucun personnage n'est inutile</text>
 </svg>

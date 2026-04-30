@@ -1,54 +1,102 @@
-<svg width="1360" height="900" viewBox="0 0 680 450" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 28px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 16px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+      .arrow { fill: none; stroke: #D4A843; stroke-width: 4; marker-end: url(#ah); }
+    </style>
+    <marker id="ah" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D4A843"/>
+    </marker>
+  </defs>
+  
+  <text x="600" y="35" font-size="24" font-weight="bold" fill="#1A237E" text-anchor="middle">NAVIGATION — 3 NIVEAUX (POUPÉES RUSSES)</text>
 
-<text x="340" y="22" text-anchor="middle" font-size="16" fill="#2C2C2A" font-weight="600">Navigation en poupées russes — 3 niveaux imbriqués</text>
+  <!-- Panel 1: Planisphere - flat map with token -->
+  <rect class="panel" x="20" y="55" width="360" height="400"/>
+  <text class="num" x="40" y="90">1</text>
+  <text x="200" y="88" font-size="16" font-weight="bold" fill="#1A237E">PLANISPHÈRE</text>
+  <!-- Flat map of Egypt -->
+  <rect x="60" y="110" width="280" height="230" rx="8" fill="#F5E6C8" stroke="#8D6E63" stroke-width="2"/>
+  <!-- Nile -->
+  <path d="M200,110 C195,160 210,200 200,250 C190,300 200,340 200,340" fill="none" stroke="#42A5F5" stroke-width="3"/>
+  <!-- Cities as dots -->
+  <circle cx="180" cy="150" r="6" fill="#C62828"/><text x="145" y="145" font-size="9" fill="#2C1810">Memphis</text>
+  <circle cx="210" cy="200" r="6" fill="#C62828"/><text x="220" y="197" font-size="9" fill="#2C1810">Thèbes</text>
+  <circle cx="190" cy="280" r="6" fill="#C62828"/><text x="200" y="277" font-size="9" fill="#2C1810">Assouan</text>
+  <!-- Token/pion -->
+  <circle cx="210" cy="200" r="14" fill="#FFD54F" stroke="#F9A825" stroke-width="3"/>
+  <text x="205" y="205" font-size="12">📍</text>
+  <!-- Hand cursor moving token -->
+  <text x="230" y="220" font-size="22">👆</text>
+  <!-- Info -->
+  <text x="200" y="370" font-size="12" fill="#666" text-anchor="middle">Vue stratégique</text>
+  <text x="200" y="386" font-size="12" fill="#666" text-anchor="middle">Pas d'ennemis</text>
+  <text class="label" x="200" y="435">VUE « DIVINE »</text>
 
-<!-- Niveau 1 : Planisphère -->
-<rect x="25" y="40" width="630" height="385" rx="20" fill="#FEFBF3" stroke="#EF9F27" stroke-width="1.5"/>
-<text x="340" y="68" text-anchor="middle" font-size="14" fill="#412402" font-weight="600">Niveau 1 — Planisphère (vue plate)</text>
-<text x="340" y="88" text-anchor="middle" font-size="11" fill="#854F0B">Pion/jeton • Pas d'ennemi • Crash zoom vers Niveau 2 • Traversée instantanée</text>
-<text x="340" y="104" text-anchor="middle" font-size="11" fill="#854F0B" font-style="italic">Compromis : contourner l'exploration = louper missions et rencontres</text>
+  <!-- Zoom arrow 1→2 -->
+  <path class="arrow" d="M 385,250 L 420,250"/>
+  <text x="390" y="240" font-size="11" fill="#D4A843" font-weight="bold">🔍+</text>
 
-<!-- Niveau 2 : Carte 3D -->
-<rect x="55" y="118" width="570" height="280" rx="16" fill="#F0F9F5" stroke="#1D9E75" stroke-width="1.2"/>
-<text x="340" y="142" text-anchor="middle" font-size="14" fill="#04342C" font-weight="600">Niveau 2 — Carte du monde 3D</text>
-<text x="340" y="160" text-anchor="middle" font-size="11" fill="#0F6E56">Avatar chibi • À pied ou véhicule • Icônes events/quêtes sur la carte</text>
-<text x="340" y="176" text-anchor="middle" font-size="11" fill="#0F6E56" font-style="italic">Ennemis visibles via [SHIFT+] • Sans [SHIFT+] = rencontres aléatoires (économie batterie)</text>
+  <!-- Panel 2: World Map 3D - chibi character -->
+  <rect class="panel" x="420" y="55" width="360" height="400"/>
+  <text class="num" x="440" y="90">2</text>
+  <text x="600" y="88" font-size="16" font-weight="bold" fill="#1A237E">CARTE 3D</text>
+  <!-- 3D terrain -->
+  <polygon points="440,340 600,180 760,340" fill="#E8D5B7" stroke="#8D6E63" stroke-width="1"/>
+  <polygon points="500,340 580,250 660,340" fill="#C8B08A"/>
+  <!-- Trees -->
+  <polygon points="520,280 530,260 540,280" fill="#66BB6A"/>
+  <polygon points="680,300 690,280 700,300" fill="#66BB6A"/>
+  <!-- Chibi character (small, cute) -->
+  <circle cx="590" cy="290" r="14" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="583" y="296" font-size="13">😊</text>
+  <rect x="583" y="304" width="14" height="18" rx="3" fill="#42A5F5" stroke="#2C1810" stroke-width="1.5"/>
+  <line x1="586" y1="322" x2="583" y2="335" stroke="#2C1810" stroke-width="2"/>
+  <line x1="597" y1="322" x2="600" y2="335" stroke="#2C1810" stroke-width="2"/>
+  <!-- SHIFT+ indicator -->
+  <rect x="460" y="130" width="120" height="25" rx="5" fill="#7E57C2" opacity="0.8"/>
+  <text x="480" y="147" font-size="11" fill="white" font-weight="bold">[SHIFT+] 👁️</text>
+  <!-- Enemy icon (visible only with SHIFT+) -->
+  <circle cx="680" cy="270" r="10" fill="#EF5350" opacity="0.5" stroke-dasharray="3,3" stroke="#C62828" stroke-width="1"/>
+  <!-- Info -->
+  <text x="600" y="370" font-size="12" fill="#666" text-anchor="middle">Exploration libre, chibi</text>
+  <text x="600" y="386" font-size="12" fill="#666" text-anchor="middle">Ennemis visibles via [SHIFT+]</text>
+  <text class="label" x="600" y="435">EXPLORATION LIBRE</text>
 
-<!-- Fields -->
-<rect x="80" y="195" width="165" height="175" rx="12" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
-<text x="162" y="218" text-anchor="middle" font-size="13" fill="#26215C" font-weight="600">Field : ville</text>
-<line x1="95" y1="228" x2="230" y2="228" stroke="#AFA9EC" stroke-width="0.5"/>
-<text x="162" y="248" text-anchor="middle" font-size="11" fill="#534AB7">Taille réelle</text>
-<text x="162" y="266" text-anchor="middle" font-size="11" fill="#534AB7">NPC, boutiques, quêtes</text>
-<text x="162" y="284" text-anchor="middle" font-size="11" fill="#534AB7">Système de dialogue</text>
-<text x="162" y="302" text-anchor="middle" font-size="11" fill="#534AB7">Anubis chasse la nuit</text>
-<text x="162" y="320" text-anchor="middle" font-size="11" fill="#534AB7">Surveillance/infiltration</text>
-<text x="162" y="340" text-anchor="middle" font-size="11" fill="#534AB7" font-style="italic">Caméras, drones, NPC</text>
-<text x="162" y="358" text-anchor="middle" font-size="11" fill="#534AB7" font-style="italic">dénonçant via [SHIFT+]</text>
+  <!-- Zoom arrow 2→3 -->
+  <path class="arrow" d="M 785,250 L 820,250"/>
+  <text x="790" y="240" font-size="11" fill="#D4A843" font-weight="bold">🔍+</text>
 
-<rect x="260" y="195" width="165" height="175" rx="12" fill="#FAECE7" stroke="#D85A30" stroke-width="0.8"/>
-<text x="342" y="218" text-anchor="middle" font-size="13" fill="#4A1B0C" font-weight="600">Field : temple</text>
-<line x1="275" y1="228" x2="410" y2="228" stroke="#F0997B" stroke-width="0.5"/>
-<text x="342" y="248" text-anchor="middle" font-size="11" fill="#993C1D">Exploration LD</text>
-<text x="342" y="266" text-anchor="middle" font-size="11" fill="#993C1D">Puzzles, énigmes</text>
-<text x="342" y="284" text-anchor="middle" font-size="11" fill="#993C1D">Trésors / items spirites</text>
-<text x="342" y="302" text-anchor="middle" font-size="11" fill="#993C1D">Shesepânkh (dieux)</text>
-<text x="342" y="320" text-anchor="middle" font-size="11" fill="#993C1D">Boss (système REN)</text>
-<text x="342" y="340" text-anchor="middle" font-size="11" fill="#993C1D" font-style="italic">Essences émotionnelles</text>
-<text x="342" y="358" text-anchor="middle" font-size="11" fill="#993C1D" font-style="italic">dans le monde invisible</text>
-
-<rect x="440" y="195" width="165" height="175" rx="12" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.8"/>
-<text x="522" y="218" text-anchor="middle" font-size="13" fill="#042C53" font-weight="600">Field : désert</text>
-<line x1="455" y1="228" x2="590" y2="228" stroke="#85B7EB" stroke-width="0.5"/>
-<text x="522" y="248" text-anchor="middle" font-size="11" fill="#185FA5">Faune mutante</text>
-<text x="522" y="266" text-anchor="middle" font-size="11" fill="#185FA5">Végétaux hostiles</text>
-<text x="522" y="284" text-anchor="middle" font-size="11" fill="#185FA5">Oasis, ruines</text>
-<text x="522" y="302" text-anchor="middle" font-size="11" fill="#185FA5">Nécropoles</text>
-<text x="522" y="320" text-anchor="middle" font-size="11" fill="#185FA5">Mekorgans sauvages</text>
-<text x="522" y="340" text-anchor="middle" font-size="11" fill="#185FA5" font-style="italic">Interactions Myt</text>
-<text x="522" y="358" text-anchor="middle" font-size="11" fill="#185FA5" font-style="italic">(nature, animaux)</text>
-
-<!-- Légende -->
-<text x="340" y="415" text-anchor="middle" font-size="13" fill="#2C2C2A" font-weight="500">Zoom in ↓ Zoom out ↑ — Sans chargement — Le joueur choisit son rythme à tout moment</text>
-<text x="340" y="435" text-anchor="middle" font-size="11" fill="#888780">Caméras : smartcam (cinématique auto sur spline) + rearview (vue arrière)</text>
+  <!-- Panel 3: Field - full size character -->
+  <rect class="panel" x="815" y="55" width="370" height="400"/>
+  <text class="num" x="835" y="90">3</text>
+  <text x="1000" y="88" font-size="16" font-weight="bold" fill="#1A237E">FIELD</text>
+  <!-- Temple interior background -->
+  <rect x="818" y="100" width="364" height="250" rx="8" fill="#E3F2FD"/>
+  <!-- Columns -->
+  <rect x="850" y="120" width="25" height="230" fill="#D7CCC8" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="1130" y="120" width="25" height="230" fill="#D7CCC8" stroke="#8D6E63" stroke-width="1"/>
+  <!-- Hieroglyphs on columns -->
+  <text x="855" y="180" font-size="10" fill="#8D6E63">𓂀</text>
+  <text x="855" y="210" font-size="10" fill="#8D6E63">𓃭</text>
+  <text x="1135" y="180" font-size="10" fill="#8D6E63">𓆣</text>
+  <!-- Full-size character -->
+  <circle cx="1000" cy="200" r="26" fill="#FFD54F" stroke="#2C1810" stroke-width="2.5"/>
+  <text x="990" y="209" font-size="24">😮</text>
+  <line x1="1000" y1="226" x2="1000" y2="290" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1000" y1="250" x2="975" y2="270" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1000" y1="250" x2="1025" y2="270" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1000" y1="290" x2="980" y2="330" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1000" y1="290" x2="1020" y2="330" stroke="#2C1810" stroke-width="3" stroke-linecap="round"/>
+  <!-- Ground -->
+  <rect x="818" y="340" width="364" height="60" fill="#E8D5B7"/>
+  <!-- Enemy visible -->
+  <circle cx="1100" cy="270" r="18" fill="#EF5350" stroke="#2C1810" stroke-width="2"/>
+  <text x="1092" y="278" font-size="16">😡</text>
+  <!-- Info -->
+  <text x="1000" y="370" font-size="12" fill="#666" text-anchor="middle">Taille réelle, combats</text>
+  <text x="1000" y="386" font-size="12" fill="#666" text-anchor="middle">Ennemis visibles</text>
+  <text class="label" x="1000" y="435">ACTION DIRECTE</text>
 </svg>

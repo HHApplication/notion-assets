@@ -1,64 +1,113 @@
-<svg width="1360" height="700" viewBox="0 0 680 350" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
-<text x="340" y="20" text-anchor="middle" font-size="14" fill="#2C2C2A" font-weight="600">Storyboard — Structure d'un chapitre : équipes et embranchements</text>
-<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 26px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 12px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <text x="600" y="35" font-size="22" font-weight="bold" fill="#1A237E" text-anchor="middle">NARRATION — STRUCTURE EN CHAPITRES</text>
 
-<!-- Début chapitre -->
-<rect x="200" y="38" width="280" height="45" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1"/>
-<text x="340" y="56" text-anchor="middle" font-size="12" fill="#412402" font-weight="600">Début du chapitre — Constitution d'équipe</text>
-<text x="340" y="72" text-anchor="middle" font-size="10" fill="#854F0B">Le joueur choisit ses titulaires. Choix verrouillé jusqu'à la fin.</text>
+  <!-- Panel 1: Choose team -->
+  <rect class="panel" x="15" y="55" width="285" height="420"/>
+  <text class="num" x="30" y="85">1</text>
+  <text x="157" y="83" font-size="13" font-weight="bold" fill="#1A237E">DÉBUT DE CHAPITRE</text>
+  <!-- Selection screen concept -->
+  <rect x="40" y="100" width="235" height="250" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="95" y="122" font-size="11" fill="#1565C0" font-weight="bold">CHOISIR TITULAIRES</text>
+  <!-- Characters to select -->
+  <circle cx="80" cy="170" r="18" fill="#FFD54F" stroke="#4CAF50" stroke-width="3"/>
+  <text x="72" y="177" font-size="16">😊</text>
+  <text x="65" y="198" font-size="8" fill="#4CAF50" font-weight="bold">✅ Titulaire</text>
+  <circle cx="157" cy="170" r="18" fill="#37474F" stroke="#4CAF50" stroke-width="3"/>
+  <text x="149" y="177" font-size="16">😎</text>
+  <text x="142" y="198" font-size="8" fill="#4CAF50" font-weight="bold">✅ Titulaire</text>
+  <circle cx="234" cy="170" r="18" fill="#FFB6C1" stroke="#4CAF50" stroke-width="3"/>
+  <text x="226" y="177" font-size="16">😏</text>
+  <text x="219" y="198" font-size="8" fill="#4CAF50" font-weight="bold">✅ Titulaire</text>
+  <!-- Non-selected -->
+  <circle cx="80" cy="260" r="16" fill="#C8E6C9" stroke="#E0E0E0" stroke-width="2" opacity="0.5"/>
+  <text x="73" y="267" font-size="14" opacity="0.5">🙂</text>
+  <text x="58" y="285" font-size="7" fill="#999">Non titulaire</text>
+  <circle cx="157" cy="260" r="16" fill="#BBDEFB" stroke="#E0E0E0" stroke-width="2" opacity="0.5"/>
+  <text x="150" y="267" font-size="14" opacity="0.5">🤓</text>
+  <text x="135" y="285" font-size="7" fill="#999">Non titulaire</text>
+  <!-- Arrow showing non-titulaires leave -->
+  <path d="M90,290 C100,330 180,330 200,300" fill="none" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="110" y="340" font-size="9" fill="#999">Vivent leur aventure</text>
+  <text class="label" x="157" y="400">Choix VERROUILLÉ</text>
+  <text x="157" y="418" font-size="10" fill="#666" text-anchor="middle">jusqu'au chapitre suivant</text>
 
-<!-- Équipe A -->
-<line x1="280" y1="83" x2="180" y2="108" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-<rect x="60" y="108" width="240" height="50" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
-<text x="180" y="128" text-anchor="middle" font-size="11" fill="#04342C" font-weight="600">Équipe A — Titulaires (joueur)</text>
-<circle cx="100" cy="145" r="10" fill="#FAECE7" stroke="#D85A30" stroke-width="1"/>
-<text x="100" y="149" text-anchor="middle" font-size="9" fill="#4A1B0C">A</text>
-<circle cx="135" cy="145" r="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1"/>
-<text x="135" y="149" text-anchor="middle" font-size="9" fill="#993556">K</text>
-<circle cx="170" cy="145" r="10" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1"/>
-<text x="170" y="149" text-anchor="middle" font-size="9" fill="#854F0B">H</text>
-<circle cx="205" cy="145" r="10" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
-<text x="205" y="149" text-anchor="middle" font-size="9" fill="#04342C">M</text>
+  <!-- Panel 2: Playing the chapter -->
+  <rect class="panel" x="310" y="55" width="285" height="420"/>
+  <text class="num" x="325" y="85">2</text>
+  <text x="452" y="83" font-size="13" font-weight="bold" fill="#1A237E">PENDANT LE CHAPITRE</text>
+  <!-- Team A (main path) -->
+  <rect x="330" y="110" width="240" height="110" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="345" y="130" font-size="11" fill="#2E7D32" font-weight="bold">ÉQUIPE A (vous)</text>
+  <!-- Three characters together -->
+  <circle cx="370" cy="175" r="14" fill="#FFD54F" stroke="#2C1810" stroke-width="1.5"/>
+  <text x="364" y="180" font-size="12">😊</text>
+  <circle cx="410" cy="175" r="14" fill="#37474F" stroke="#2C1810" stroke-width="1.5"/>
+  <text x="404" y="180" font-size="12">😎</text>
+  <circle cx="450" cy="175" r="14" fill="#FFB6C1" stroke="#2C1810" stroke-width="1.5"/>
+  <text x="444" y="180" font-size="12">😏</text>
+  <!-- Arrow down: main quest -->
+  <text x="420" y="205" font-size="10" fill="#4CAF50">→ quête principale</text>
+  <!-- Team B (off-screen) -->
+  <rect x="330" y="240" width="240" height="80" rx="6" fill="#ECEFF1" stroke="#90A4AE" stroke-width="1.5"/>
+  <text x="345" y="260" font-size="11" fill="#607D8B" font-weight="bold">ÉQUIPE B (hors champ)</text>
+  <circle cx="370" cy="290" r="12" fill="#C8E6C9" stroke="#999" stroke-width="1.5" opacity="0.6"/>
+  <text x="364" y="295" font-size="10" opacity="0.6">🙂</text>
+  <circle cx="400" cy="290" r="12" fill="#BBDEFB" stroke="#999" stroke-width="1.5" opacity="0.6"/>
+  <text x="394" y="295" font-size="10" opacity="0.6">🤓</text>
+  <text x="430" y="295" font-size="9" fill="#999">que font-ils ? 🤔</text>
+  <text class="label" x="452" y="400">2 histoires en parallèle</text>
 
-<!-- Équipe B -->
-<line x1="400" y1="83" x2="500" y2="108" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-<rect x="380" y="108" width="240" height="50" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
-<text x="500" y="128" text-anchor="middle" font-size="11" fill="#26215C" font-weight="600">Équipe B — Non-titulaires (autonomes)</text>
-<circle cx="440" cy="145" r="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1" stroke-dasharray="2 2"/>
-<text x="440" y="149" text-anchor="middle" font-size="9" fill="#534AB7">He</text>
-<circle cx="475" cy="145" r="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1" stroke-dasharray="2 2"/>
-<text x="475" y="149" text-anchor="middle" font-size="9" fill="#534AB7">O</text>
-<text x="520" y="149" font-size="9" fill="#534AB7" font-style="italic">vivent leur aventure</text>
+  <!-- Panel 3: End of chapter - fork -->
+  <rect class="panel" x="605" y="55" width="285" height="420"/>
+  <text class="num" x="620" y="85">3</text>
+  <text x="747" y="83" font-size="13" font-weight="bold" fill="#1A237E">FIN DE CHAPITRE</text>
+  <!-- Fork in the road -->
+  <circle cx="747" cy="140" r="25" fill="#FFD54F" opacity="0.2" stroke="#F9A825" stroke-width="2"/>
+  <text x="737" y="147" font-size="16" font-weight="bold" fill="#F9A825">CH.X</text>
+  <!-- Branching arrows -->
+  <line x1="747" y1="165" x2="680" y2="220" stroke="#4CAF50" stroke-width="3"/>
+  <line x1="747" y1="165" x2="747" y2="220" stroke="#2196F3" stroke-width="3"/>
+  <line x1="747" y1="165" x2="815" y2="220" stroke="#FF9800" stroke-width="3"/>
+  <!-- Options -->
+  <rect x="630" y="225" width="105" height="55" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="645" y="245" font-size="9" fill="#2E7D32" font-weight="bold">Continuer A</text>
+  <text x="645" y="260" font-size="8" fill="#2E7D32">même équipe</text>
+  <text x="645" y="273" font-size="8" fill="#2E7D32">même histoire</text>
+  <rect x="695" y="290" width="105" height="55" rx="6" fill="#E3F2FD" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="710" y="310" font-size="9" fill="#1565C0" font-weight="bold">Basculer sur B</text>
+  <text x="710" y="325" font-size="8" fill="#1565C0">B devient A</text>
+  <text x="710" y="338" font-size="8" fill="#1565C0">autre point de vue</text>
+  <rect x="760" y="225" width="105" height="55" rx="6" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5"/>
+  <text x="775" y="245" font-size="9" fill="#E65100" font-weight="bold">Réintégrer</text>
+  <text x="775" y="260" font-size="8" fill="#E65100">B rejoint A</text>
+  <text x="775" y="273" font-size="8" fill="#E65100">(s'ils acceptent)</text>
+  <text class="label" x="747" y="400">MULTIPLES VOIES</text>
 
-<!-- Milieu de chapitre -->
-<line x1="180" y1="158" x2="180" y2="185" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-<rect x="80" y="185" width="200" height="30" rx="6" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
-<text x="180" y="204" text-anchor="middle" font-size="10" fill="#5F5E5A">Chapitre en cours — quêtes, combats, dialogues</text>
-
-<!-- Fin de chapitre -->
-<line x1="180" y1="215" x2="180" y2="240" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-<rect x="80" y="240" width="200" height="30" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
-<text x="180" y="260" text-anchor="middle" font-size="10" fill="#501313" font-weight="500">Fin du chapitre → séparation possible</text>
-
-<!-- Options chapitre suivant -->
-<line x1="180" y1="270" x2="180" y2="295" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-
-<!-- 4 options en bas -->
-<rect x="20" y="295" width="145" height="40" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="92" y="312" text-anchor="middle" font-size="10" fill="#04342C" font-weight="500">Continuer A</text>
-<text x="92" y="327" text-anchor="middle" font-size="9" fill="#0F6E56">mêmes titulaires</text>
-
-<rect x="175" y="295" width="145" height="40" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
-<text x="247" y="312" text-anchor="middle" font-size="10" fill="#412402" font-weight="500">Réintégrer B→A</text>
-<text x="247" y="327" text-anchor="middle" font-size="9" fill="#854F0B">s'ils acceptent</text>
-
-<rect x="330" y="295" width="145" height="40" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="402" y="312" text-anchor="middle" font-size="10" fill="#26215C" font-weight="500">Basculer sur B</text>
-<text x="402" y="327" text-anchor="middle" font-size="9" fill="#534AB7">B devient A</text>
-
-<rect x="485" y="295" width="175" height="40" rx="6" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
-<text x="572" y="312" text-anchor="middle" font-size="10" fill="#4B1528" font-weight="500">⏪ Revenir au précédent</text>
-<text x="572" y="327" text-anchor="middle" font-size="9" fill="#993556">RÉCOMPENSÉ, pas sanctionné</text>
-
-<text x="340" y="348" text-anchor="middle" font-size="11" fill="#2C2C2A" font-style="italic">Le joueur choisit ce qu'il veut voir de l'histoire. Ses parties se cumulent.</text>
+  <!-- Panel 4: Replay = reward -->
+  <rect class="panel" x="900" y="55" width="285" height="420"/>
+  <text class="num" x="915" y="85">4</text>
+  <text x="1042" y="83" font-size="13" font-weight="bold" fill="#1A237E">RETOUR EN ARRIÈRE</text>
+  <!-- Rewind symbol -->
+  <text x="1010" y="150" font-size="40" fill="#7E57C2">⏪</text>
+  <!-- Character going back to replay -->
+  <circle cx="1000" cy="210" r="18" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="993" y="217" font-size="16">🤔</text>
+  <!-- Arrow back to previous chapter -->
+  <path d="M980,215 C940,220 920,250 930,280" fill="none" stroke="#7E57C2" stroke-width="2.5"/>
+  <text x="920" y="275" font-size="10" fill="#7E57C2">← ch. précédent</text>
+  <!-- Reward! -->
+  <rect x="920" y="310" width="240" height="100" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="1040" y="335" font-size="14" fill="#2E7D32" text-anchor="middle" font-weight="bold">🏆 RÉCOMPENSÉ !</text>
+  <text x="940" y="355" font-size="10" fill="#2E7D32">✅ Jamais sanctionné</text>
+  <text x="940" y="375" font-size="10" fill="#2E7D32">✅ Les parties se cumulent</text>
+  <text x="940" y="395" font-size="10" fill="#2E7D32">✅ Le jeu encourage à tout voir</text>
+  <text class="label" x="1042" y="450">REJOUER = BONUS</text>
 </svg>

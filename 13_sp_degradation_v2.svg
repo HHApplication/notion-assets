@@ -1,61 +1,83 @@
-<svg width="1400" height="440" viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 24px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 12px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+    </style>
+  </defs>
+  <text x="600" y="30" font-size="22" font-weight="bold" fill="#7E57C2" text-anchor="middle">DÉGRADATION DES SP — SPIRALE DE LA FOLIE</text>
 
-<text x="350" y="22" text-anchor="middle" font-size="15" fill="#2C2C2A" font-weight="700">Plus tu restes dans [SHIFT+], plus tu deviens fou</text>
+  <!-- Panel 1: SP 100% - all good -->
+  <rect class="panel" x="15" y="45" width="280" height="330"/>
+  <text class="num" x="30" y="72">1</text>
+  <text x="155" y="70" font-size="13" font-weight="bold" fill="#4CAF50">SP 100%</text>
+  <circle cx="155" cy="160" r="24" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="146" y="168" font-size="22">😊</text>
+  <line x1="155" y1="184" x2="155" y2="240" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="155" y1="210" x2="130" y2="225" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="155" y1="210" x2="180" y2="225" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="60" y="270" width="190" height="18" rx="9" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <rect x="60" y="270" width="190" height="18" rx="9" fill="#4CAF50"/>
+  <text x="130" y="283" font-size="10" fill="white" font-weight="bold">SP ████████████</text>
+  <text class="label" x="155" y="315">Tout va bien</text>
+  <text x="155" y="335" font-size="10" fill="#666" text-anchor="middle">Contrôle normal</text>
 
-<!-- CASE 1: OK -->
-<rect x="10" y="38" width="165" height="170" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="2"/>
-<!-- Happy face -->
-<circle cx="92" cy="100" r="30" fill="#EAF3DE" stroke="#639922" stroke-width="3"/>
-<circle cx="80" cy="93" r="3" fill="#27500A"/>
-<circle cx="104" cy="93" r="3" fill="#27500A"/>
-<path d="M78 108 Q92 120 106 108" fill="none" stroke="#27500A" stroke-width="2" stroke-linecap="round"/>
-<!-- Barre SP -->
-<rect x="25" y="145" width="135" height="14" rx="4" fill="#ddd"/>
-<rect x="25" y="145" width="120" height="14" rx="4" fill="#639922"/>
-<text x="92" y="175" text-anchor="middle" font-size="13" fill="#27500A" font-weight="600">😊 Ça va</text>
-<text x="92" y="192" text-anchor="middle" font-size="11" fill="#27500A">SP : 75%</text>
+  <!-- Panel 2: SP 50% - hallucinations -->
+  <rect class="panel" x="310" y="45" width="280" height="330"/>
+  <text class="num" x="325" y="72">2</text>
+  <text x="450" y="70" font-size="13" font-weight="bold" fill="#FF8F00">SP ~50%</text>
+  <circle cx="420" cy="160" r="24" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="411" y="168" font-size="22">😰</text>
+  <line x1="420" y1="184" x2="420" y2="240" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Hallucination ghosts around -->
+  <text x="370" y="140" font-size="16" opacity="0.4">👻</text>
+  <text x="460" y="155" font-size="14" opacity="0.3">👁️</text>
+  <text x="380" y="220" font-size="12" opacity="0.2">💀</text>
+  <!-- Glitch effect -->
+  <rect x="450" y="170" width="40" height="3" fill="#C62828" opacity="0.3"/>
+  <rect x="355" y="195" width="30" height="3" fill="#7E57C2" opacity="0.3"/>
+  <rect x="310" y="270" width="190" height="18" rx="9" fill="#FFF3E0" stroke="#FF8F00" stroke-width="2"/>
+  <rect x="310" y="270" width="95" height="18" rx="9" fill="#FF8F00"/>
+  <text x="340" y="283" font-size="10" fill="white" font-weight="bold">SP ██████</text>
+  <text class="label" x="450" y="315">Hallucinations</text>
+  <text x="450" y="335" font-size="10" fill="#E65100" text-anchor="middle">Commandes parfois inversées</text>
 
-<!-- CASE 2: Hallucinations -->
-<rect x="185" y="38" width="165" height="170" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="2"/>
-<!-- Worried face -->
-<circle cx="267" cy="100" r="30" fill="#FAEEDA" stroke="#EF9F27" stroke-width="3"/>
-<circle cx="255" cy="93" r="3" fill="#633806"/>
-<circle cx="279" cy="93" r="3" fill="#633806"/>
-<path d="M255 112 Q267 106 279 112" fill="none" stroke="#633806" stroke-width="2" stroke-linecap="round"/>
-<!-- Fantômes -->
-<text x="220" y="78" font-size="18" opacity="0.4">👻</text>
-<text x="300" y="90" font-size="14" opacity="0.3">👻</text>
-<!-- Barre SP -->
-<rect x="200" y="145" width="135" height="14" rx="4" fill="#ddd"/>
-<rect x="200" y="145" width="55" height="14" rx="4" fill="#EF9F27"/>
-<text x="267" y="175" text-anchor="middle" font-size="13" fill="#633806" font-weight="600">😰 Hallucinations</text>
-<text x="267" y="192" text-anchor="middle" font-size="11" fill="#633806">SP : 40%</text>
+  <!-- Panel 3: SP ~10% - paralysis -->
+  <rect class="panel" x="605" y="45" width="280" height="330"/>
+  <text class="num" x="620" y="72">3</text>
+  <text x="745" y="70" font-size="13" font-weight="bold" fill="#C62828">SP ~10%</text>
+  <circle cx="720" cy="160" r="24" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="711" y="168" font-size="22">😵</text>
+  <line x1="720" y1="184" x2="720" y2="240" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Paralysis lightning -->
+  <text x="748" y="200" font-size="18">⚡</text>
+  <text x="690" y="190" font-size="18">⚡</text>
+  <!-- Character shaking -->
+  <line x1="700" y1="220" x2="695" y2="245" stroke="#C62828" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="740" y1="220" x2="745" y2="245" stroke="#C62828" stroke-width="2" stroke-dasharray="3,3"/>
+  <rect x="605" y="270" width="190" height="18" rx="9" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+  <rect x="605" y="270" width="20" height="18" rx="9" fill="#C62828"/>
+  <text x="615" y="283" font-size="10" fill="white" font-weight="bold">SP █</text>
+  <text class="label" x="745" y="315">Paralysies, confusion</text>
+  <text x="745" y="335" font-size="10" fill="#C62828" text-anchor="middle">Quasi incontrôlable</text>
 
-<!-- CASE 3: Perte de contrôle -->
-<rect x="360" y="38" width="165" height="170" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="2"/>
-<!-- Panicked face -->
-<circle cx="442" cy="100" r="30" fill="#FAECE7" stroke="#D85A30" stroke-width="3"/>
-<circle cx="430" cy="90" r="4" fill="#4A1B0C"/>
-<circle cx="454" cy="90" r="4" fill="#4A1B0C"/>
-<ellipse cx="442" cy="112" rx="8" ry="5" fill="#4A1B0C"/>
-<!-- Spirales autour (confusion) -->
-<text x="408" y="82" font-size="16">🌀</text>
-<text x="462" y="78" font-size="12">🌀</text>
-<!-- Manette inversée -->
-<text x="415" y="145" font-size="10" fill="#993C1D">← veut dire →</text>
-<text x="415" y="158" font-size="10" fill="#993C1D">↑ veut dire ↓</text>
-<text x="442" y="178" text-anchor="middle" font-size="13" fill="#993C1D" font-weight="600">😵 Contrôles inversés</text>
-<text x="442" y="195" text-anchor="middle" font-size="11" fill="#993C1D">SP : 15%</text>
-
-<!-- CASE 4: Catatonie -->
-<rect x="535" y="38" width="155" height="170" rx="8" fill="#2C2C2A" stroke="#E24B4A" stroke-width="2.5"/>
-<!-- Dark face consumed by shadow -->
-<circle cx="612" cy="100" r="30" fill="#1a1a1a" stroke="#E24B4A" stroke-width="3"/>
-<line cx="600" cy="93" x1="598" y1="90" x2="608" y2="96" stroke="#E24B4A" stroke-width="2"/>
-<line cx="624" cy="93" x1="618" y1="96" x2="628" y2="90" stroke="#E24B4A" stroke-width="2"/>
-<line x1="600" y1="110" x2="624" y2="110" stroke="#E24B4A" stroke-width="2"/>
-<!-- Barre SP vide -->
-<rect x="550" y="145" width="125" height="14" rx="4" fill="#501313"/>
-<text x="612" y="178" text-anchor="middle" font-size="13" fill="#E24B4A" font-weight="700">☠️ CATATONIE</text>
-<text x="612" y="195" text-anchor="middle" font-size="11" fill="#E24B4A">SP : 0%</text>
+  <!-- Panel 4: SP 0% - Shuyet takes over -->
+  <rect class="panel" x="900" y="45" width="285" height="330"/>
+  <text class="num" x="915" y="72">4</text>
+  <text x="1042" y="70" font-size="13" font-weight="bold" fill="#37474F">SP 0% — SHUYET</text>
+  <!-- Character covered in shadow -->
+  <circle cx="1042" cy="160" r="30" fill="#37474F" opacity="0.6"/>
+  <circle cx="1042" cy="155" r="24" fill="#263238"/>
+  <text x="1033" y="163" font-size="22">😶</text>
+  <!-- Shadow tendrils -->
+  <path d="M1015,165 C995,180 990,210 1000,230" fill="none" stroke="#37474F" stroke-width="3" opacity="0.4"/>
+  <path d="M1070,165 C1090,180 1095,210 1085,230" fill="none" stroke="#37474F" stroke-width="3" opacity="0.4"/>
+  <path d="M1042,185 C1042,210 1042,230 1042,250" fill="none" stroke="#37474F" stroke-width="3" opacity="0.4"/>
+  <text x="1042" y="250" font-size="14" fill="#37474F" text-anchor="middle" font-weight="bold">SHUYET</text>
+  <rect x="920" y="270" width="240" height="18" rx="9" fill="#263238" stroke="#37474F" stroke-width="2"/>
+  <text x="1000" y="283" font-size="10" fill="#999" font-weight="bold">SP ░░░░░░░░░░░</text>
+  <text class="label" x="1042" y="310">Prisonnier de l'ombre</text>
+  <text x="1042" y="330" font-size="10" fill="#37474F" text-anchor="middle">Protégé MAIS enfermé</text>
+  <text x="1042" y="350" font-size="10" fill="#37474F" text-anchor="middle">→ dormir pour récupérer</text>
 </svg>

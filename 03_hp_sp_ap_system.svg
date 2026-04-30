@@ -1,94 +1,135 @@
-<svg width="1360" height="1200" viewBox="0 0 680 600" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 28px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 15px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+      .body { stroke: #2C1810; stroke-width: 3; stroke-linecap: round; fill: none; }
+      .head { fill: #FFD54F; stroke: #2C1810; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <text x="600" y="40" font-size="24" font-weight="bold" fill="#1A237E" text-anchor="middle">HP / SP / AP</text>
 
-<text x="340" y="22" text-anchor="middle" font-size="16" fill="#2C2C2A" font-weight="600">Système HP / SP / AP — Les trois jauges vitales</text>
-<text x="340" y="42" text-anchor="middle" font-size="12" fill="#888780">Composantes de l'être → paramètres de gameplay</text>
-<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+  <!-- Panel 1: HP - getting hit, HP drops -->
+  <rect class="panel" x="20" y="60" width="570" height="340"/>
+  <text class="num" x="40" y="95">1</text>
+  <text x="180" y="92" font-size="18" font-weight="bold" fill="#C62828">HP — corps physique</text>
+  <!-- Hero getting hit -->
+  <circle class="head" cx="150" cy="180" r="24"/>
+  <text x="140" y="189" font-size="22">😣</text>
+  <line class="body" x1="150" y1="204" x2="150" y2="260"/>
+  <line class="body" x1="150" y1="225" x2="125" y2="245"/>
+  <line class="body" x1="150" y1="225" x2="175" y2="245"/>
+  <line class="body" x1="150" y1="260" x2="130" y2="295"/>
+  <line class="body" x1="150" y1="260" x2="170" y2="295"/>
+  <!-- Impact -->
+  <text x="175" y="210" font-size="22">💥</text>
+  <!-- HP bar going down -->
+  <rect x="80" y="310" width="180" height="20" rx="10" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+  <rect x="80" y="310" width="60" height="20" rx="10" fill="#E53935"/>
+  <text x="110" y="325" font-size="11" fill="white" font-weight="bold">HP</text>
+  <!-- Arrow to death -->
+  <text x="290" y="270" font-size="16" fill="#C62828">→</text>
+  <!-- At 0HP: ghost -->
+  <circle cx="370" cy="180" r="24" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="2" opacity="0.6"/>
+  <text x="360" y="189" font-size="22">👻</text>
+  <line x1="370" y1="204" x2="370" y2="250" stroke="#9E9E9E" stroke-width="2" stroke-dasharray="5,5"/>
+  <!-- Ka/Ba separating -->
+  <text x="340" y="155" font-size="13" fill="#7E57C2" font-weight="bold">Ka</text>
+  <text x="390" y="155" font-size="13" fill="#FF8F00" font-weight="bold">Ba</text>
+  <path d="M355,160 C340,140 320,140 310,150" fill="none" stroke="#7E57C2" stroke-width="2"/>
+  <path d="M405,160 C420,140 440,140 450,150" fill="none" stroke="#FF8F00" stroke-width="2"/>
+  <!-- Label under: Sah persiste -->
+  <text x="370" y="280" font-size="12" fill="#666" text-anchor="middle">Sah (fantôme)</text>
+  <text x="370" y="325" font-size="12" fill="#666" text-anchor="middle">peut encore aider</text>
+  <text class="label" x="250" y="380">0 HP → esprit quitte le corps</text>
 
-<!-- HP -->
-<rect x="30" y="65" width="190" height="85" rx="10" fill="#FAECE7" stroke="#D85A30" stroke-width="1"/>
-<text x="125" y="88" text-anchor="middle" font-size="15" fill="#4A1B0C" font-weight="600">HP — Health Points</text>
-<text x="125" y="108" text-anchor="middle" font-size="11" fill="#993C1D">Source : Ankh → Hat (cœur)</text>
-<text x="125" y="125" text-anchor="middle" font-size="11" fill="#993C1D">Support : corps physique (Khat)</text>
-<text x="125" y="142" text-anchor="middle" font-size="11" fill="#712B13" font-weight="500">Drainé par : COMBAT</text>
+  <!-- Panel 2: SP - going crazy in Ba world -->
+  <rect class="panel" x="610" y="60" width="570" height="340"/>
+  <text class="num" x="630" y="95">2</text>
+  <text x="780" y="92" font-size="18" font-weight="bold" fill="#7E57C2">SP — santé mentale</text>
+  <!-- Character entering Ba world (purple aura) -->
+  <circle cx="720" cy="180" r="35" fill="#E1BEE7" opacity="0.4"/>
+  <circle class="head" cx="720" cy="175" r="24"/>
+  <text x="710" y="184" font-size="22">😰</text>
+  <line class="body" x1="720" y1="199" x2="720" y2="255"/>
+  <line class="body" x1="720" y1="220" x2="695" y2="240"/>
+  <line class="body" x1="720" y1="220" x2="745" y2="240"/>
+  <line class="body" x1="720" y1="255" x2="700" y2="290"/>
+  <line class="body" x1="720" y1="255" x2="740" y2="290"/>
+  <!-- SP bar decreasing -->
+  <rect x="670" y="310" width="180" height="20" rx="10" fill="#E1BEE7" stroke="#7E57C2" stroke-width="2"/>
+  <rect x="670" y="310" width="50" height="20" rx="10" fill="#7E57C2"/>
+  <text x="690" y="325" font-size="11" fill="white" font-weight="bold">SP</text>
+  <!-- Arrow to Shuyet -->
+  <text x="870" y="230" font-size="16" fill="#7E57C2">→</text>
+  <!-- At 0SP: covered by shadow -->
+  <circle cx="970" cy="175" r="30" fill="#37474F" opacity="0.7"/>
+  <circle cx="970" cy="175" r="24" fill="#263238"/>
+  <text x="960" y="184" font-size="22">😶</text>
+  <line x1="970" y1="199" x2="970" y2="255" stroke="#37474F" stroke-width="3" stroke-linecap="round"/>
+  <!-- Shadow tendrils -->
+  <path d="M945,180 C930,190 930,210 940,220" fill="none" stroke="#37474F" stroke-width="3" opacity="0.5"/>
+  <path d="M995,180 C1010,190 1010,210 1000,220" fill="none" stroke="#37474F" stroke-width="3" opacity="0.5"/>
+  <text x="970" y="280" font-size="13" fill="#37474F" text-anchor="middle" font-weight="bold">Shuyet</text>
+  <text x="970" y="295" font-size="11" fill="#666" text-anchor="middle">protège + emprisonne</text>
+  <text class="label" x="895" y="380">0 SP → ombre envahit</text>
 
-<!-- SP -->
-<rect x="245" y="65" width="190" height="85" rx="10" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
-<text x="340" y="88" text-anchor="middle" font-size="15" fill="#042C53" font-weight="600">SP — Sanity Points</text>
-<text x="340" y="108" text-anchor="middle" font-size="11" fill="#185FA5">Source : Ab (cœur psychique)</text>
-<text x="340" y="125" text-anchor="middle" font-size="11" fill="#185FA5">Support : santé mentale</text>
-<text x="340" y="142" text-anchor="middle" font-size="11" fill="#0C447C" font-weight="500">Drainé par : [SHIFT+]</text>
+  <!-- Panel 3: AP - super attack -->
+  <rect class="panel" x="20" y="440" width="570" height="320"/>
+  <text class="num" x="40" y="475">3</text>
+  <text x="180" y="472" font-size="18" font-weight="bold" fill="#FF8F00">AP — puissance (Sekhem)</text>
+  <!-- AP bar filling up -->
+  <rect x="80" y="510" width="200" height="24" rx="12" fill="#FFF3E0" stroke="#FF8F00" stroke-width="2"/>
+  <rect x="80" y="510" width="200" height="24" rx="12" fill="#FF8F00"/>
+  <text x="140" y="527" font-size="12" fill="white" font-weight="bold">AP 100%</text>
+  <!-- Hero powering up -->
+  <circle cx="200" cy="600" r="30" fill="#FFD54F" opacity="0.3"/>
+  <circle class="head" cx="200" cy="595" r="24"/>
+  <text x="190" y="604" font-size="22">🔥</text>
+  <line class="body" x1="200" y1="619" x2="200" y2="670"/>
+  <line class="body" x1="200" y1="640" x2="170" y2="625"/>
+  <line class="body" x1="200" y1="640" x2="235" y2="620"/>
+  <line class="body" x1="200" y1="670" x2="180" y2="705"/>
+  <line class="body" x1="200" y1="670" x2="220" y2="705"/>
+  <!-- Energy burst -->
+  <text x="240" y="590" font-size="28">⚡</text>
+  <!-- Target enemy -->
+  <circle cx="400" cy="620" r="22" fill="#EF5350" stroke="#2C1810" stroke-width="2"/>
+  <text x="390" y="628" font-size="20">😵</text>
+  <!-- Big impact -->
+  <text x="320" y="610" font-size="40">💥</text>
+  <text class="label" x="305" y="740">SUPER ATTAQUE (Monde du Ba uniquement)</text>
 
-<!-- AP -->
-<rect x="460" y="65" width="190" height="85" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
-<text x="555" y="88" text-anchor="middle" font-size="15" fill="#26215C" font-weight="600">AP — Action Points</text>
-<text x="555" y="108" text-anchor="middle" font-size="11" fill="#534AB7">Source : Sekhem (puissance)</text>
-<text x="555" y="125" text-anchor="middle" font-size="11" fill="#534AB7">Support : jauge offensive</text>
-<text x="555" y="142" text-anchor="middle" font-size="11" fill="#3C3489" font-weight="500">Chargé par : COMBAT</text>
-
-<!-- Flèches vers conséquences -->
-<line x1="125" y1="150" x2="125" y2="195" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-<line x1="340" y1="150" x2="340" y2="195" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-<line x1="555" y1="150" x2="555" y2="195" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-
-<text x="125" y="185" text-anchor="middle" font-size="12" fill="#D85A30" font-weight="600">= 0</text>
-<text x="340" y="185" text-anchor="middle" font-size="12" fill="#378ADD" font-weight="600">= 0</text>
-<text x="555" y="185" text-anchor="middle" font-size="12" fill="#534AB7" font-weight="600">= 100%</text>
-
-<!-- MORT -->
-<rect x="30" y="200" width="190" height="80" rx="10" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1"/>
-<text x="125" y="222" text-anchor="middle" font-size="14" fill="#501313" font-weight="600">MORT</text>
-<text x="125" y="242" text-anchor="middle" font-size="11" fill="#A32D2D">Ka → Sahu (fantôme)</text>
-<text x="125" y="258" text-anchor="middle" font-size="11" fill="#A32D2D">Ba éjecté → inframonde</text>
-<text x="125" y="274" text-anchor="middle" font-size="11" fill="#A32D2D">Corps à transporter</text>
-
-<!-- CATATONIE -->
-<rect x="245" y="200" width="190" height="80" rx="10" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
-<text x="340" y="222" text-anchor="middle" font-size="14" fill="#042C53" font-weight="600">CATATONIE</text>
-<text x="340" y="242" text-anchor="middle" font-size="11" fill="#185FA5">Shuyet (ombre) envahit</text>
-<text x="340" y="258" text-anchor="middle" font-size="11" fill="#185FA5">Prisonnier mental</text>
-<text x="340" y="274" text-anchor="middle" font-size="11" fill="#185FA5">Défense/volonté ↓↓</text>
-
-<!-- SUPER ATTAQUE -->
-<rect x="460" y="200" width="190" height="80" rx="10" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1"/>
-<text x="555" y="222" text-anchor="middle" font-size="14" fill="#26215C" font-weight="600">SUPER ATTAQUE</text>
-<text x="555" y="242" text-anchor="middle" font-size="11" fill="#534AB7">Via avatar numérique</text>
-<text x="555" y="258" text-anchor="middle" font-size="11" fill="#534AB7">Monde du Ba uniquement</text>
-<text x="555" y="274" text-anchor="middle" font-size="11" fill="#534AB7">Corrélé au personnage</text>
-
-<!-- Résolution mort -->
-<line x1="125" y1="280" x2="125" y2="315" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-<rect x="15" y="315" width="220" height="160" rx="10" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="125" y="338" text-anchor="middle" font-size="13" fill="#04342C" font-weight="500">Résolution mort</text>
-<rect x="30" y="350" width="190" height="22" rx="4" fill="#9FE1CB" stroke="none"/>
-<text x="125" y="366" text-anchor="middle" font-size="11" fill="#04342C">1. Refusion Ka+Ba (immédiat)</text>
-<rect x="30" y="378" width="190" height="22" rx="4" fill="#9FE1CB" stroke="none"/>
-<text x="125" y="394" text-anchor="middle" font-size="11" fill="#04342C">2. Sauvetage nuit via Ba</text>
-<rect x="30" y="406" width="190" height="22" rx="4" fill="#9FE1CB" stroke="none"/>
-<text x="125" y="422" text-anchor="middle" font-size="11" fill="#04342C">3. Inframonde (Antichambre)</text>
-<text x="125" y="450" text-anchor="middle" font-size="11" fill="#0F6E56" font-weight="500">Plus on attend → plus dur</text>
-<text x="125" y="466" text-anchor="middle" font-size="10" fill="#0F6E56" font-style="italic">Âmes deviennent sauvages</text>
-
-<!-- Résolution catatonie -->
-<line x1="340" y1="280" x2="340" y2="315" stroke="#888780" stroke-width="1" marker-end="url(#arr)"/>
-<rect x="245" y="315" width="190" height="140" rx="10" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-<text x="340" y="338" text-anchor="middle" font-size="13" fill="#042C53" font-weight="500">Résolution folie</text>
-<rect x="260" y="350" width="160" height="22" rx="4" fill="#B5D4F4" stroke="none"/>
-<text x="340" y="366" text-anchor="middle" font-size="11" fill="#042C53">1. Aide compagnons</text>
-<rect x="260" y="378" width="160" height="22" rx="4" fill="#B5D4F4" stroke="none"/>
-<text x="340" y="394" text-anchor="middle" font-size="11" fill="#042C53">2. Troc fin de combat</text>
-<rect x="260" y="406" width="160" height="22" rx="4" fill="#B5D4F4" stroke="none"/>
-<text x="340" y="422" text-anchor="middle" font-size="11" fill="#042C53">3. Attendre (indispo)</text>
-<text x="340" y="445" text-anchor="middle" font-size="12" fill="#0C447C" font-weight="600">Seul regen : DORMIR</text>
-
-<!-- Régénération -->
-<rect x="460" y="315" width="190" height="100" rx="10" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-<text x="555" y="338" text-anchor="middle" font-size="13" fill="#173404" font-weight="500">Régénération</text>
-<text x="555" y="362" text-anchor="middle" font-size="11" fill="#3B6D11">HP : repos, items, soins</text>
-<text x="555" y="382" text-anchor="middle" font-size="11" fill="#3B6D11">(Hetep = seul soigneur)</text>
-<text x="555" y="402" text-anchor="middle" font-size="12" fill="#27500A" font-weight="600">SP : DORMIR uniquement</text>
-
-<!-- Principe -->
-<rect x="30" y="500" width="620" height="45" rx="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
-<text x="340" y="520" text-anchor="middle" font-size="13" fill="#2C2C2A" font-weight="500">Principe cardinal : rien n'est jamais gratuit.</text>
-<text x="340" y="538" text-anchor="middle" font-size="11" fill="#5F5E5A">Utiliser [SHIFT+] = perdre SP. Se battre = risquer HP. Jouer la nuit = pas de regen SP. Chaque choix a un coût.</text>
+  <!-- Panel 4: Recovery - sleep = only SP recovery -->
+  <rect class="panel" x="610" y="440" width="570" height="320"/>
+  <text class="num" x="630" y="475">4</text>
+  <text x="790" y="472" font-size="18" font-weight="bold" fill="#4CAF50">Récupération</text>
+  <!-- Night sky -->
+  <rect x="613" y="500" width="564" height="150" rx="8" fill="#1A237E" opacity="0.1"/>
+  <!-- Moon -->
+  <circle cx="1100" cy="530" r="15" fill="#FFF9C4"/>
+  <!-- Character sleeping -->
+  <circle class="head" cx="800" cy="580" r="24"/>
+  <text x="790" y="589" font-size="22">😴</text>
+  <line x1="800" y1="604" x2="800" y2="630" stroke="#2C1810" stroke-width="3"/>
+  <!-- Bed -->
+  <line x1="760" y1="640" x2="850" y2="640" stroke="#8D6E63" stroke-width="5"/>
+  <!-- Zzz -->
+  <text x="830" y="565" font-size="16" fill="#5C6BC0" font-weight="bold">Z z z</text>
+  <!-- Bars going UP -->
+  <rect x="900" y="560" width="140" height="16" rx="8" fill="#FFCDD2" stroke="#C62828" stroke-width="1.5"/>
+  <rect x="900" y="560" width="130" height="16" rx="8" fill="#E53935"/>
+  <text x="945" y="573" font-size="10" fill="white" font-weight="bold">HP ▲▲▲</text>
+  <rect x="900" y="585" width="140" height="16" rx="8" fill="#E1BEE7" stroke="#7E57C2" stroke-width="1.5"/>
+  <rect x="900" y="585" width="140" height="16" rx="8" fill="#7E57C2"/>
+  <text x="940" y="598" font-size="10" fill="white" font-weight="bold">SP ▲▲▲▲</text>
+  <rect x="900" y="610" width="140" height="16" rx="8" fill="#FFF3E0" stroke="#FF8F00" stroke-width="1.5"/>
+  <rect x="900" y="610" width="60" height="16" rx="8" fill="#FF8F00"/>
+  <text x="912" y="623" font-size="10" fill="white" font-weight="bold">🔋</text>
+  <!-- Key info -->
+  <text x="895" y="660" font-size="12" fill="#4CAF50" font-weight="bold" text-anchor="middle">Dormir = SEUL moyen</text>
+  <text x="895" y="676" font-size="12" fill="#4CAF50" font-weight="bold" text-anchor="middle">de récupérer 100% SP</text>
+  <text class="label" x="895" y="740">LE SOMMEIL EST VITAL</text>
 </svg>

@@ -1,68 +1,146 @@
-<svg width="1360" height="1100" viewBox="0 0 680 550" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .panel { fill: #FFF8E7; stroke: #2C1810; stroke-width: 3; rx: 12; }
+      .num { font-size: 24px; font-weight: bold; fill: #C62828; }
+      .label { font-size: 14px; font-weight: bold; fill: #2C1810; text-anchor: middle; }
+      .body { stroke: #2C1810; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+      .head { fill: #FFD54F; stroke: #2C1810; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <text x="600" y="35" font-size="24" font-weight="bold" fill="#1A237E" text-anchor="middle">LES 5 PLANS D'EXISTENCE</text>
 
-<text x="340" y="22" text-anchor="middle" font-size="16" fill="#2C2C2A" font-weight="600">Les cinq plans d'existence — et le secret ontologique</text>
+  <!-- Panel 1: Monde Sensible -->
+  <rect class="panel" x="20" y="55" width="370" height="340"/>
+  <text class="num" x="40" y="85">1</text>
+  <rect x="23" y="58" width="364" height="40" rx="10" fill="#4CAF50" opacity="0.2"/>
+  <text x="205" y="82" font-size="15" font-weight="bold" fill="#2E7D32" text-anchor="middle">MONDE SENSIBLE</text>
+  <!-- Desert + city scene -->
+  <rect x="23" y="98" width="364" height="200" fill="#E3F2FD"/>
+  <rect x="23" y="260" width="364" height="60" fill="#E8D5B7"/>
+  <!-- Buildings -->
+  <rect x="60" y="200" width="40" height="60" fill="#D7CCC8" stroke="#8D6E63" stroke-width="1"/>
+  <rect x="110" y="180" width="50" height="80" fill="#BCAAA4" stroke="#8D6E63" stroke-width="1"/>
+  <!-- Pyramid -->
+  <polygon points="300,260 340,180 380,260" fill="#D4A843" opacity="0.5"/>
+  <!-- Khat (physical body) walking -->
+  <circle class="head" cx="200" cy="220" r="18"/>
+  <text x="192" y="227" font-size="16">😊</text>
+  <line class="body" x1="200" y1="238" x2="200" y2="275"/>
+  <line class="body" x1="200" y1="255" x2="180" y2="270"/>
+  <line class="body" x1="200" y1="255" x2="220" y2="270"/>
+  <line class="body" x1="200" y1="275" x2="185" y2="300"/>
+  <line class="body" x1="200" y1="275" x2="215" y2="300"/>
+  <text x="210" y="310" font-size="11" fill="#2E7D32" font-weight="bold">Khat</text>
+  <text class="label" x="205" y="375">Le réel — on y dirige Khat</text>
 
-<!-- Plan 1 : Monde sensible -->
-<rect x="30" y="50" width="390" height="68" rx="10" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1"/>
-<text x="225" y="72" text-anchor="middle" font-size="14" fill="#412402" font-weight="600">1. Monde sensible</text>
-<text x="225" y="92" text-anchor="middle" font-size="11" fill="#854F0B">Le réel — Égypte antique SF/cyberpunk</text>
-<text x="225" y="108" text-anchor="middle" font-size="11" fill="#854F0B">On dirige Khat (corps physique)</text>
+  <!-- Panel 2: Monde Invisible -->
+  <rect class="panel" x="410" y="55" width="370" height="340"/>
+  <text class="num" x="430" y="85">2</text>
+  <rect x="413" y="58" width="364" height="40" rx="10" fill="#7E57C2" opacity="0.2"/>
+  <text x="595" y="82" font-size="15" font-weight="bold" fill="#4A148C" text-anchor="middle">MONDE INVISIBLE</text>
+  <!-- Purple ethereal space -->
+  <rect x="413" y="98" width="364" height="220" fill="#EDE7F6"/>
+  <!-- Floating spirits (Ba and Ka) -->
+  <circle cx="500" cy="200" r="18" fill="#CE93D8" stroke="#7E57C2" stroke-width="2" opacity="0.7"/>
+  <text x="493" y="207" font-size="14">Ba</text>
+  <circle cx="600" cy="180" r="18" fill="#B39DDB" stroke="#7E57C2" stroke-width="2" opacity="0.7"/>
+  <text x="593" y="187" font-size="14">Ka</text>
+  <!-- Connection lines -->
+  <line x1="518" y1="200" x2="582" y2="185" stroke="#7E57C2" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Ghost spirits floating -->
+  <circle cx="700" cy="210" r="12" fill="#E0E0E0" opacity="0.5"/>
+  <text x="694" y="216" font-size="12">👻</text>
+  <circle cx="680" cy="170" r="10" fill="#E0E0E0" opacity="0.4"/>
+  <text x="674" y="176" font-size="10">👻</text>
+  <text class="label" x="595" y="375">Esprits des vivants (Ba, Ka)</text>
 
-<!-- Plan 2 : Monde du Ba -->
-<rect x="30" y="128" width="390" height="68" rx="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1"/>
-<text x="225" y="150" text-anchor="middle" font-size="14" fill="#4B1528" font-weight="600">2. Monde du Ba (« virtuel »)</text>
-<text x="225" y="170" text-anchor="middle" font-size="11" fill="#993556">Layer RA/RV superposé via [SHIFT+]</text>
-<text x="225" y="186" text-anchor="middle" font-size="11" fill="#993556">On dirige le Ba (avatar numérique)</text>
+  <!-- Panel 3: Inframonde -->
+  <rect class="panel" x="800" y="55" width="380" height="340"/>
+  <text class="num" x="820" y="85">3</text>
+  <rect x="803" y="58" width="374" height="40" rx="10" fill="#F44336" opacity="0.15"/>
+  <text x="990" y="82" font-size="15" font-weight="bold" fill="#B71C1C" text-anchor="middle">INFRAMONDE</text>
+  <!-- Dark space -->
+  <rect x="803" y="98" width="374" height="220" fill="#263238" opacity="0.15"/>
+  <!-- Scales of justice (Pesée) -->
+  <line x1="990" y1="150" x2="990" y2="200" stroke="#8D6E63" stroke-width="3"/>
+  <line x1="950" y1="200" x2="1030" y2="200" stroke="#8D6E63" stroke-width="3"/>
+  <!-- Left pan (heart) -->
+  <path d="M950,200 L940,230 L960,230 Z" fill="#FFCDD2" stroke="#C62828" stroke-width="1"/>
+  <text x="944" y="225" font-size="10">❤️</text>
+  <!-- Right pan (feather) -->
+  <path d="M1030,200 L1020,220 L1040,220 Z" fill="#FFF9C4" stroke="#F9A825" stroke-width="1"/>
+  <text x="1025" y="218" font-size="10">🪶</text>
+  <!-- Ka entering -->
+  <circle cx="880" cy="240" r="16" fill="#B39DDB" opacity="0.6" stroke="#7E57C2" stroke-width="1.5"/>
+  <text x="873" y="247" font-size="13">😟</text>
+  <text x="870" y="270" font-size="11" fill="#7E57C2">Ka</text>
+  <!-- Gate/door -->
+  <rect x="1080" y="150" width="60" height="120" rx="4" fill="#5D4037" stroke="#3E2723" stroke-width="2"/>
+  <text x="1095" y="220" font-size="14" fill="#FFD54F">🔒</text>
+  <text x="1085" y="290" font-size="10" fill="#B71C1C" text-anchor="middle">Tribunal fermé</text>
+  <text class="label" x="990" y="375">Pesée de Ab — entre vie et mort</text>
 
-<!-- Plan 3 : Monde invisible -->
-<rect x="30" y="206" width="390" height="68" rx="10" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
-<text x="225" y="228" text-anchor="middle" font-size="14" fill="#042C53" font-weight="600">3. Monde invisible</text>
-<text x="225" y="248" text-anchor="middle" font-size="11" fill="#185FA5">Plan spirituel — Ba, Ka des vivants</text>
-<text x="225" y="264" text-anchor="middle" font-size="11" fill="#185FA5">On dirige Ka (double éthéré)</text>
+  <!-- Panel 4: Monde Mythique -->
+  <rect class="panel" x="20" y="430" width="370" height="340"/>
+  <text class="num" x="40" y="460">4</text>
+  <rect x="23" y="433" width="364" height="40" rx="10" fill="#FFD54F" opacity="0.2"/>
+  <text x="205" y="457" font-size="15" font-weight="bold" fill="#F57F17" text-anchor="middle">MONDE MYTHIQUE</text>
+  <!-- Golden divine space -->
+  <rect x="23" y="473" width="364" height="200" fill="#FFF8E1"/>
+  <!-- Gods silhouettes -->
+  <circle cx="120" cy="560" r="25" fill="#FFD54F" opacity="0.3"/>
+  <text x="110" y="567" font-size="22">🌟</text>
+  <circle cx="250" cy="550" r="30" fill="#FFD54F" opacity="0.3"/>
+  <text x="240" y="558" font-size="26">🌟</text>
+  <!-- Mystery -->
+  <text x="330" y="570" font-size="30">❓</text>
+  <text x="150" y="630" font-size="13" fill="#F57F17" text-anchor="middle">Au-delà — dieux et transfigurés</text>
+  <text x="150" y="650" font-size="12" fill="#999" text-anchor="middle">(2ème moitié du jeu)</text>
+  <text class="label" x="205" y="750">INACCESSIBLE AU DÉBUT</text>
 
-<!-- Plan 4 : Inframonde -->
-<rect x="30" y="284" width="390" height="68" rx="10" fill="#F1EFE8" stroke="#888780" stroke-width="1"/>
-<text x="225" y="306" text-anchor="middle" font-size="14" fill="#2C2C2A" font-weight="600">4. Inframonde</text>
-<text x="225" y="326" text-anchor="middle" font-size="11" fill="#5F5E5A">Entre-deux — pesée de Ab (âme)</text>
-<text x="225" y="342" text-anchor="middle" font-size="11" fill="#5F5E5A">Antichambre du Grand Tribunal (fermé)</text>
-
-<!-- Plan 5 : Monde mythique -->
-<rect x="30" y="362" width="390" height="68" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
-<text x="225" y="384" text-anchor="middle" font-size="14" fill="#26215C" font-weight="600">5. Monde mythique</text>
-<text x="225" y="404" text-anchor="middle" font-size="11" fill="#534AB7">Au-delà — dieux et transfigurés</text>
-<text x="225" y="420" text-anchor="middle" font-size="11" fill="#534AB7">Rôle majeur seconde moitié du jeu</text>
-
-<!-- SECRET ONTOLOGIQUE -->
-<rect x="445" y="100" width="210" height="280" rx="14" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1.5" stroke-dasharray="6 3"/>
-<text x="550" y="130" text-anchor="middle" font-size="15" fill="#501313" font-weight="600">LE SECRET</text>
-
-<line x1="460" y1="148" x2="640" y2="148" stroke="#F09595" stroke-width="0.5"/>
-
-<text x="550" y="170" text-anchor="middle" font-size="12" fill="#A32D2D" font-weight="500">Monde du Ba</text>
-<text x="550" y="188" text-anchor="middle" font-size="12" fill="#A32D2D" font-weight="600">= Monde invisible</text>
-
-<text x="550" y="215" text-anchor="middle" font-size="11" fill="#791F1F">L'utilisateur pense jouer</text>
-<text x="550" y="232" text-anchor="middle" font-size="11" fill="#791F1F">à la réalité mixte.</text>
-
-<text x="550" y="258" text-anchor="middle" font-size="11" fill="#791F1F">En réalité il confronte</text>
-<text x="550" y="275" text-anchor="middle" font-size="11" fill="#791F1F" font-weight="500">son propre esprit.</text>
-
-<line x1="460" y1="290" x2="640" y2="290" stroke="#F09595" stroke-width="0.5"/>
-
-<text x="550" y="310" text-anchor="middle" font-size="11" fill="#A32D2D" font-weight="500">Brèche ouverte :</text>
-<text x="550" y="328" text-anchor="middle" font-size="11" fill="#791F1F">invisible ↔ inframonde</text>
-<text x="550" y="348" text-anchor="middle" font-size="11" fill="#791F1F">Morts circulent parmi</text>
-<text x="550" y="365" text-anchor="middle" font-size="11" fill="#791F1F">les vivants.</text>
-
-<!-- Flèches vers le secret -->
-<path d="M420 162 L443 162" fill="none" stroke="#E24B4A" stroke-width="1.2" marker-end="url(#redarr)"/>
-<path d="M420 240 L443 240" fill="none" stroke="#E24B4A" stroke-width="1.2" marker-end="url(#redarr)"/>
-<path d="M420 318 L443 318" fill="none" stroke="#E24B4A" stroke-width="1.2" marker-end="url(#redarr)"/>
-<defs><marker id="redarr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#E24B4A" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
-
-<!-- Conséquence gameplay -->
-<rect x="30" y="455" width="625" height="68" rx="10" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-<text x="342" y="478" text-anchor="middle" font-size="13" fill="#173404" font-weight="600">Traduction gameplay</text>
-<text x="342" y="498" text-anchor="middle" font-size="12" fill="#3B6D11">Activer [SHIFT+] = entrer dans le monde invisible sans le savoir</text>
-<text x="342" y="515" text-anchor="middle" font-size="12" fill="#3B6D11">= s'exposer aux morts = SP qui baissent = On ressent, on ne voit pas</text>
+  <!-- Panel 5: Dimension Virtuelle (Monde du Ba) -->
+  <rect class="panel" x="410" y="430" width="770" height="340"/>
+  <text class="num" x="430" y="460">5</text>
+  <rect x="413" y="433" width="764" height="40" rx="10" fill="#00BCD4" opacity="0.2"/>
+  <text x="795" y="457" font-size="15" font-weight="bold" fill="#006064" text-anchor="middle">DIMENSION VIRTUELLE — MONDE DU BA (via [SHIFT+])</text>
+  <!-- Split view: real world + overlay -->
+  <rect x="430" y="490" width="340" height="180" fill="#E3F2FD"/>
+  <rect x="430" y="640" width="340" height="50" fill="#E8D5B7"/>
+  <!-- Real world buildings -->
+  <rect x="460" y="580" width="35" height="60" fill="#D7CCC8"/>
+  <rect x="510" y="560" width="45" height="80" fill="#BCAAA4"/>
+  <!-- AR overlay (holographic) -->
+  <rect x="450" y="510" width="100" height="22" rx="5" fill="#00BCD4" opacity="0.3" stroke="#00BCD4" stroke-width="1"/>
+  <text x="460" y="526" font-size="10" fill="#006064">📍 Navigation</text>
+  <rect x="600" y="530" width="80" height="18" rx="4" fill="#FF9800" opacity="0.3" stroke="#FF9800" stroke-width="1"/>
+  <text x="610" y="544" font-size="9" fill="#E65100">🛒 PUB</text>
+  <rect x="580" y="560" width="120" height="20" rx="4" fill="#FF9800" opacity="0.2" stroke="#FF9800" stroke-width="1"/>
+  <text x="590" y="575" font-size="9" fill="#E65100">📢 SOLDES -50%</text>
+  <!-- Character with SHIFT+ active (eye glowing) -->
+  <circle cx="560" cy="600" r="20" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="551" y="608" font-size="18">🤖</text>
+  <line x1="560" y1="620" x2="560" y2="660" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="560" y1="635" x2="540" y2="650" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="560" y1="635" x2="580" y2="650" stroke="#2C1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- THE SECRET -->
+  <rect x="810" y="490" width="350" height="200" rx="10" fill="#37474F" opacity="0.08"/>
+  <text x="985" y="520" font-size="14" font-weight="bold" fill="#C62828" text-anchor="middle">⚠️ LE SECRET</text>
+  <!-- Character thinks they play VR -->
+  <circle cx="870" cy="580" r="18" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="862" y="587" font-size="16">😎</text>
+  <text x="870" y="610" font-size="10" fill="#666" text-anchor="middle">« je joue »</text>
+  <!-- Arrow -->
+  <text x="920" y="585" font-size="18" fill="#C62828">→</text>
+  <!-- Reality: confronting death -->
+  <circle cx="990" cy="580" r="18" fill="#FFD54F" stroke="#2C1810" stroke-width="2"/>
+  <text x="982" y="587" font-size="16">😱</text>
+  <text x="990" y="610" font-size="10" fill="#C62828" text-anchor="middle">confronte sa mort</text>
+  <!-- Ghost spirits around -->
+  <text x="1050" y="560" font-size="14" opacity="0.4">👻</text>
+  <text x="1080" y="590" font-size="12" opacity="0.3">👻</text>
+  <text x="1040" y="620" font-size="10" opacity="0.2">👻</text>
+  <text x="985" y="660" font-size="11" fill="#C62828" text-anchor="middle" font-weight="bold">On ressent, on ne voit pas</text>
+  <text class="label" x="795" y="750">RÉALITÉ MIXTE — MAIS EN VRAI : INTROSPECTION SPIRITUELLE</text>
 </svg>
