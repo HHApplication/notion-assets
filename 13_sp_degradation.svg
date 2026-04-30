@@ -1,0 +1,71 @@
+<svg width="1360" height="600" viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<text x="340" y="20" text-anchor="middle" font-size="14" fill="#2C2C2A" font-weight="600">Storyboard — Dégradation des SP : ce que le joueur subit</text>
+
+<!-- Phase 1: SP 75% -->
+<rect x="20" y="40" width="150" height="220" rx="6" fill="#E6F1FB" stroke="#378ADD" stroke-width="1.2"/>
+<text x="95" y="58" text-anchor="middle" font-size="11" fill="#042C53" font-weight="500">SP : 75%</text>
+<rect x="35" y="65" width="120" height="10" rx="3" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+<rect x="35" y="65" width="90" height="10" rx="3" fill="#378ADD" stroke="none"/>
+<circle cx="95" cy="120" r="16" fill="#E6F1FB" stroke="#378ADD" stroke-width="1.5"/>
+<text x="95" y="124" text-anchor="middle" font-size="12" fill="#185FA5" font-weight="500">K</text>
+<line x1="95" y1="136" x2="95" y2="165" stroke="#378ADD" stroke-width="1.5"/>
+<line x1="80" y1="150" x2="110" y2="150" stroke="#378ADD" stroke-width="1.5"/>
+<text x="95" y="190" text-anchor="middle" font-size="10" fill="#185FA5">Tout va bien.</text>
+<text x="95" y="205" text-anchor="middle" font-size="10" fill="#185FA5">Contrôle normal.</text>
+<rect x="35" y="218" width="120" height="28" rx="4" fill="#EAF3DE" stroke="none"/>
+<text x="95" y="236" text-anchor="middle" font-size="10" fill="#27500A">✅ RAS</text>
+
+<!-- Phase 2: SP 40% -->
+<rect x="185" y="40" width="150" height="220" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.2"/>
+<text x="260" y="58" text-anchor="middle" font-size="11" fill="#412402" font-weight="500">SP : 40%</text>
+<rect x="200" y="65" width="120" height="10" rx="3" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
+<rect x="200" y="65" width="48" height="10" rx="3" fill="#EF9F27" stroke="none"/>
+<circle cx="260" cy="120" r="16" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="260" y="124" text-anchor="middle" font-size="12" fill="#854F0B" font-weight="500">K</text>
+<line x1="260" y1="136" x2="260" y2="165" stroke="#EF9F27" stroke-width="1.5"/>
+<line x1="245" y1="150" x2="275" y2="150" stroke="#EF9F27" stroke-width="1.5"/>
+<!-- Hallucination: fantômes qui apparaissent -->
+<circle cx="220" cy="105" r="8" fill="none" stroke="#EF9F27" stroke-width="0.5" stroke-dasharray="2 2" opacity="0.5"/>
+<text x="220" y="109" text-anchor="middle" font-size="8" opacity="0.5">👻</text>
+<circle cx="300" cy="115" r="6" fill="none" stroke="#EF9F27" stroke-width="0.5" stroke-dasharray="2 2" opacity="0.4"/>
+<text x="300" y="118" text-anchor="middle" font-size="7" opacity="0.4">👻</text>
+<text x="260" y="190" text-anchor="middle" font-size="10" fill="#854F0B">Hallucinations.</text>
+<text x="260" y="205" text-anchor="middle" font-size="10" fill="#854F0B">Formes floues autour.</text>
+<rect x="200" y="218" width="120" height="28" rx="4" fill="#FAEEDA" stroke="none"/>
+<text x="260" y="236" text-anchor="middle" font-size="10" fill="#633806">⚠️ Attention</text>
+
+<!-- Phase 3: SP 15% -->
+<rect x="350" y="40" width="150" height="220" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="1.2"/>
+<text x="425" y="58" text-anchor="middle" font-size="11" fill="#4A1B0C" font-weight="500">SP : 15%</text>
+<rect x="365" y="65" width="120" height="10" rx="3" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+<rect x="365" y="65" width="18" height="10" rx="3" fill="#D85A30" stroke="none"/>
+<circle cx="425" cy="120" r="16" fill="#FAECE7" stroke="#D85A30" stroke-width="1.5"/>
+<text x="425" y="124" text-anchor="middle" font-size="12" fill="#993C1D" font-weight="500">K</text>
+<line x1="425" y1="136" x2="425" y2="165" stroke="#D85A30" stroke-width="1.5"/>
+<!-- Bras inversés (commandes inversées) -->
+<line x1="440" y1="150" x2="460" y2="140" stroke="#D85A30" stroke-width="1.5"/>
+<line x1="410" y1="150" x2="390" y2="160" stroke="#D85A30" stroke-width="1.5"/>
+<text x="425" y="184" text-anchor="middle" font-size="10" fill="#993C1D" font-weight="500">Commandes inversées.</text>
+<text x="425" y="199" text-anchor="middle" font-size="10" fill="#993C1D">Paralysies ponctuelles.</text>
+<text x="425" y="214" text-anchor="middle" font-size="10" fill="#993C1D">Le perso ne répond plus.</text>
+<rect x="365" y="225" width="120" height="28" rx="4" fill="#FCEBEB" stroke="none"/>
+<text x="425" y="243" text-anchor="middle" font-size="10" fill="#A32D2D">🔴 Critique</text>
+
+<!-- Phase 4: SP 0% -->
+<rect x="515" y="40" width="150" height="220" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1.5"/>
+<text x="590" y="58" text-anchor="middle" font-size="11" fill="#501313" font-weight="600">SP : 0% — CATATONIE</text>
+<rect x="530" y="65" width="120" height="10" rx="3" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+<!-- Personnage recouvert par l'ombre -->
+<circle cx="590" cy="120" r="20" fill="#2C2C2A" stroke="#E24B4A" stroke-width="2"/>
+<text x="590" y="124" text-anchor="middle" font-size="12" fill="#E24B4A" font-weight="600">K</text>
+<text x="590" y="108" text-anchor="middle" font-size="10" fill="#E24B4A">Shuyet</text>
+<line x1="590" y1="140" x2="590" y2="165" stroke="#2C2C2A" stroke-width="2"/>
+<line x1="575" y1="150" x2="605" y2="150" stroke="#2C2C2A" stroke-width="2"/>
+<text x="590" y="184" text-anchor="middle" font-size="10" fill="#501313" font-weight="500">L'ombre envahit tout.</text>
+<text x="590" y="199" text-anchor="middle" font-size="10" fill="#501313">Prisonnier mental.</text>
+<text x="590" y="214" text-anchor="middle" font-size="10" fill="#501313">Indisponible.</text>
+<rect x="530" y="225" width="120" height="28" rx="4" fill="#2C2C2A" stroke="none"/>
+<text x="590" y="243" text-anchor="middle" font-size="10" fill="#E24B4A" font-weight="600">☠️ Catatonie</text>
+
+<text x="340" y="285" text-anchor="middle" font-size="12" fill="#2C2C2A" font-weight="500" font-style="italic">Le seul moyen de récupérer les SP : dormir. Chaque seconde dans [SHIFT+] a un coût.</text>
+</svg>

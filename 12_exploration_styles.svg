@@ -1,0 +1,62 @@
+<svg width="1360" height="800" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<text x="340" y="20" text-anchor="middle" font-size="14" fill="#2C2C2A" font-weight="600">Storyboard — Même obstacle, 3 personnages, 3 approches</text>
+<text x="340" y="38" text-anchor="middle" font-size="11" fill="#888780">Un mur bloque l'accès à une salle secrète dans un temple. Comment passer ?</text>
+
+<!-- Le mur (commun aux 3) -->
+<rect x="20" y="55" width="640" height="40" rx="4" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="340" y="80" text-anchor="middle" font-size="12" fill="#5F5E5A" font-weight="500">🧱 MUR — accès bloqué vers une salle secrète</text>
+
+<!-- Option A: Hetep explose -->
+<rect x="20" y="110" width="200" height="250" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="120" y="130" text-anchor="middle" font-size="12" fill="#412402" font-weight="600">💣 Hetep</text>
+<circle cx="80" cy="185" r="16" fill="#FAEEDA" stroke="#EF9F27" stroke-width="2"/>
+<text x="80" y="189" text-anchor="middle" font-size="12" fill="#854F0B" font-weight="600">H</text>
+<line x1="80" y1="201" x2="80" y2="230" stroke="#EF9F27" stroke-width="2"/>
+<line x1="95" y1="215" x2="120" y2="200" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="130" y="198" font-size="14">💥</text>
+<rect x="135" y="170" width="70" height="50" rx="4" fill="#F1EFE8" stroke="#888780" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="170" y="195" text-anchor="middle" font-size="9" fill="#888780">mur détruit</text>
+<text x="120" y="260" text-anchor="middle" font-size="10" fill="#854F0B">Explosifs → passage ouvert</text>
+<rect x="35" y="275" width="170" height="35" rx="4" fill="#FCEBEB" stroke="none"/>
+<text x="120" y="290" text-anchor="middle" font-size="10" fill="#A32D2D">⚠️ Bruyant !</text>
+<text x="120" y="303" text-anchor="middle" font-size="9" fill="#A32D2D">Alerte les ennemis du temple</text>
+<text x="120" y="335" text-anchor="middle" font-size="10" fill="#633806" font-weight="500">Style : bourrin, efficace</text>
+<text x="120" y="350" text-anchor="middle" font-size="10" fill="#633806">mais pas discret</text>
+
+<!-- Option B: Anubis contourne par le toit -->
+<rect x="240" y="110" width="200" height="250" rx="6" fill="#E6F1FB" stroke="#378ADD" stroke-width="1.5"/>
+<text x="340" y="130" text-anchor="middle" font-size="12" fill="#042C53" font-weight="600">🕵️ Anubis</text>
+<circle cx="290" cy="200" r="16" fill="#E6F1FB" stroke="#378ADD" stroke-width="2"/>
+<text x="290" y="204" text-anchor="middle" font-size="12" fill="#185FA5" font-weight="600">An</text>
+<line x1="290" y1="216" x2="290" y2="240" stroke="#378ADD" stroke-width="2"/>
+<line x1="305" y1="190" x2="340" y2="160" stroke="#378ADD" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="345" y="158" font-size="12">🪝</text>
+<text x="370" y="170" font-size="9" fill="#185FA5">grappin</text>
+<rect x="330" y="175" width="90" height="30" rx="4" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+<text x="375" y="192" text-anchor="middle" font-size="9" fill="#185FA5">passe par le toit</text>
+<text x="340" y="260" text-anchor="middle" font-size="10" fill="#185FA5">Grappin → accès par le haut</text>
+<rect x="255" y="275" width="170" height="35" rx="4" fill="#EAF3DE" stroke="none"/>
+<text x="340" y="290" text-anchor="middle" font-size="10" fill="#27500A">✅ Discret</text>
+<text x="340" y="303" text-anchor="middle" font-size="9" fill="#27500A">Personne ne le voit</text>
+<text x="340" y="335" text-anchor="middle" font-size="10" fill="#0C447C" font-weight="500">Style : chasseur, agile</text>
+<text x="340" y="350" text-anchor="middle" font-size="10" fill="#0C447C">accès exclusif aux hauteurs</text>
+
+<!-- Option C: Kahay pirate -->
+<rect x="460" y="110" width="200" height="250" rx="6" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+<text x="560" y="130" text-anchor="middle" font-size="12" fill="#4B1528" font-weight="600">👩‍💻 Kahay</text>
+<circle cx="510" cy="200" r="16" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+<text x="510" y="204" text-anchor="middle" font-size="12" fill="#993556" font-weight="600">K</text>
+<line x1="510" y1="216" x2="510" y2="240" stroke="#D4537E" stroke-width="1.5"/>
+<line x1="525" y1="200" x2="555" y2="185" stroke="#D4537E" stroke-width="1"/>
+<rect x="540" y="170" width="100" height="35" rx="4" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+<text x="590" y="186" text-anchor="middle" font-size="9" fill="#993556">📡 [SHIFT+] hack</text>
+<text x="590" y="200" text-anchor="middle" font-size="9" fill="#993556">panneau de commande</text>
+<text x="560" y="260" text-anchor="middle" font-size="10" fill="#993556">Piratage → porte déverrouillée</text>
+<rect x="475" y="275" width="170" height="35" rx="4" fill="#FAEEDA" stroke="none"/>
+<text x="560" y="290" text-anchor="middle" font-size="10" fill="#633806">⚡ Coûte des SP</text>
+<text x="560" y="303" text-anchor="middle" font-size="9" fill="#633806">Utilise [SHIFT+] → batterie</text>
+<text x="560" y="335" text-anchor="middle" font-size="10" fill="#72243E" font-weight="500">Style : frêle mais discrète</text>
+<text x="560" y="350" text-anchor="middle" font-size="10" fill="#72243E">accès exclusif aux systèmes</text>
+
+<text x="340" y="385" text-anchor="middle" font-size="12" fill="#2C2C2A" font-weight="500" font-style="italic">Pas de bonne réponse. Juste des conséquences différentes.</text>
+</svg>

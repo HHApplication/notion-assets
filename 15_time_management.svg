@@ -1,0 +1,93 @@
+<svg width="1360" height="800" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<text x="340" y="20" text-anchor="middle" font-size="14" fill="#2C2C2A" font-weight="600">Storyboard — Gestion du temps : une journée d'Antef</text>
+
+<!-- Personnage + OS holographique -->
+<circle cx="60" cy="90" r="16" fill="#FAECE7" stroke="#D85A30" stroke-width="2"/>
+<text x="60" y="94" text-anchor="middle" font-size="12" fill="#4A1B0C" font-weight="600">A</text>
+<line x1="60" y1="106" x2="60" y2="135" stroke="#D85A30" stroke-width="2"/>
+<line x1="75" y1="100" x2="100" y2="80" stroke="#D85A30" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="55" y="150" text-anchor="middle" font-size="9" fill="#993C1D">Antef consulte</text>
+<text x="55" y="162" text-anchor="middle" font-size="9" fill="#993C1D">son [SHIFT+]</text>
+
+<!-- Écran OS holographique -->
+<rect x="100" y="40" width="560" height="125" rx="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1"/>
+<text x="380" y="60" text-anchor="middle" font-size="11" fill="#4B1528" font-weight="600">📱 [SHIFT+] OS — Schedule du jour</text>
+
+<!-- Timeline -->
+<line x1="120" y1="80" x2="640" y2="80" stroke="#D4537E" stroke-width="0.5"/>
+<text x="145" y="77" text-anchor="middle" font-size="8" fill="#993556">6h</text>
+<text x="230" y="77" text-anchor="middle" font-size="8" fill="#993556">9h</text>
+<text x="315" y="77" text-anchor="middle" font-size="8" fill="#993556">12h</text>
+<text x="400" y="77" text-anchor="middle" font-size="8" fill="#993556">14h</text>
+<text x="500" y="77" text-anchor="middle" font-size="8" fill="#993556">18h</text>
+<text x="585" y="77" text-anchor="middle" font-size="8" fill="#993556">22h</text>
+
+<!-- Blocs d'activités -->
+<rect x="120" y="88" width="110" height="25" rx="4" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+<text x="175" y="105" text-anchor="middle" font-size="9" fill="#04342C">🏛️ Travail au Kenbet</text>
+
+<rect x="240" y="88" width="75" height="25" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="277" y="105" text-anchor="middle" font-size="9" fill="#26215C">🗣️ Dialogue NPC</text>
+
+<rect x="380" y="88" width="120" height="25" rx="4" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
+<text x="440" y="105" text-anchor="middle" font-size="9" fill="#412402">⚰️ Funérailles Coptos</text>
+
+<rect x="510" y="88" width="80" height="25" rx="4" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+<text x="550" y="105" text-anchor="middle" font-size="9" fill="#4A1B0C">⚔️ Patrouille</text>
+
+<rect x="600" y="88" width="40" height="25" rx="4" fill="#2C2C2A" stroke="none"/>
+<text x="620" y="105" text-anchor="middle" font-size="9" fill="#F1EFE8">🌙</text>
+
+<!-- Unités de temps restantes -->
+<rect x="120" y="125" width="200" height="22" rx="4" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="220" y="140" text-anchor="middle" font-size="10" fill="#2C2C2A">⏱️ Unités restantes : ████████░░░░ (8/12)</text>
+
+<!-- Mission popup -->
+<rect x="20" y="180" width="320" height="190" rx="8" fill="#FFF8F0" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="180" y="200" text-anchor="middle" font-size="12" fill="#412402" font-weight="600">📋 Nouvelle mission disponible</text>
+<line x1="35" y1="208" x2="325" y2="208" stroke="#EF9F27" stroke-width="0.5"/>
+
+<text x="45" y="228" font-size="10" fill="#2C2C2A">📍 Endroit : Kharga Oasis</text>
+<text x="45" y="245" font-size="10" fill="#2C2C2A">⏰ Durée : période complète (~30 min)</text>
+<text x="45" y="262" font-size="10" fill="#2C2C2A">👤 Client : Apou</text>
+<text x="45" y="279" font-size="10" fill="#2C2C2A">👥 Participants : 1–4</text>
+<text x="45" y="296" font-size="10" fill="#E24B4A">⚠️ Risques : 5</text>
+<text x="45" y="313" font-size="10" fill="#27500A">🎁 Reward : Objet X, unités de temps, debens</text>
+
+<!-- Boutons d'action -->
+<rect x="35" y="325" width="80" height="28" rx="6" fill="#97C459" stroke="none"/>
+<text x="75" y="343" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">Accepter</text>
+<rect x="125" y="325" width="80" height="28" rx="6" fill="#E24B4A" stroke="none"/>
+<text x="165" y="343" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">Refuser</text>
+<rect x="215" y="325" width="80" height="28" rx="6" fill="#378ADD" stroke="none"/>
+<text x="255" y="343" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">Moduler</text>
+
+<!-- Outils de décision à droite -->
+<rect x="360" y="180" width="300" height="190" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
+<text x="510" y="200" text-anchor="middle" font-size="12" fill="#042C53" font-weight="600">🔧 Outils de décision</text>
+<line x1="375" y1="208" x2="645" y2="208" stroke="#378ADD" stroke-width="0.5"/>
+
+<!-- Outil 1: Profils -->
+<circle cx="400" cy="235" r="10" fill="#FAECE7" stroke="#D85A30" stroke-width="1"/>
+<text x="400" y="239" text-anchor="middle" font-size="9" fill="#4A1B0C">A</text>
+<circle cx="425" cy="235" r="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1"/>
+<text x="425" y="239" text-anchor="middle" font-size="9" fill="#993556">K</text>
+<circle cx="450" cy="235" r="10" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1"/>
+<text x="450" y="239" text-anchor="middle" font-size="9" fill="#854F0B">H</text>
+<text x="520" y="239" font-size="10" fill="#185FA5">Examiner les profils</text>
+
+<!-- Outil 2: Projection -->
+<rect x="385" y="258" width="250" height="25" rx="4" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+<text x="510" y="275" text-anchor="middle" font-size="10" fill="#993556">📡 Projection [SHIFT+] — voir de quoi il retourne</text>
+
+<!-- Outil 3: Recommencer -->
+<rect x="385" y="290" width="250" height="25" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="510" y="307" text-anchor="middle" font-size="10" fill="#534AB7">🔄 Se réserver le droit de recommencer le soir</text>
+
+<!-- Warning -->
+<rect x="385" y="322" width="250" height="35" rx="4" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+<text x="510" y="338" text-anchor="middle" font-size="10" fill="#A32D2D" font-weight="500">⚠️ Défier les lois de la nature</text>
+<text x="510" y="352" text-anchor="middle" font-size="10" fill="#A32D2D">se paye en santé mentale (SP)</text>
+
+<text x="340" y="390" text-anchor="middle" font-size="11" fill="#2C2C2A" font-weight="500" font-style="italic">Le joueur a le droit à l'information et surtout à l'erreur.</text>
+</svg>

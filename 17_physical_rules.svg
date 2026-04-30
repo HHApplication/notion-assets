@@ -1,0 +1,44 @@
+<svg width="1360" height="500" viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<text x="340" y="20" text-anchor="middle" font-size="14" fill="#2C2C2A" font-weight="600">Storyboard — Règles physiques : les personnages sont fragiles</text>
+
+<!-- Case 1: Saut trop haut -->
+<rect x="20" y="40" width="200" height="170" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="1.2"/>
+<text x="30" y="57" font-size="10" fill="#4A1B0C" font-weight="500">Saut dangereux</text>
+<rect x="40" y="70" width="50" height="80" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<circle cx="65" cy="75" r="10" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1"/>
+<text x="65" y="79" text-anchor="middle" font-size="9" fill="#854F0B">H</text>
+<line x1="65" y1="85" x2="65" y2="100" stroke="#EF9F27" stroke-width="1"/>
+<line x1="75" y1="90" x2="120" y2="130" stroke="#EF9F27" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="110" y="120" font-size="12">↓</text>
+<circle cx="130" cy="155" r="10" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1"/>
+<text x="130" y="159" text-anchor="middle" font-size="9" fill="#E24B4A">H</text>
+<text x="155" y="155" font-size="10" fill="#E24B4A">🦿</text>
+<text x="120" y="185" text-anchor="middle" font-size="9" fill="#993C1D">Boite, ne peut plus courir.</text>
+<text x="120" y="198" text-anchor="middle" font-size="9" fill="#993C1D">Trop haut → peut mourir.</text>
+
+<!-- Case 2: Noyade -->
+<rect x="240" y="40" width="200" height="170" rx="6" fill="#E6F1FB" stroke="#378ADD" stroke-width="1.2"/>
+<text x="250" y="57" font-size="10" fill="#042C53" font-weight="500">Noyade sous l'eau</text>
+<rect x="255" y="100" width="170" height="70" rx="4" fill="#B5D4F4" stroke="#378ADD" stroke-width="0.5" opacity="0.5"/>
+<text x="340" y="120" text-anchor="middle" font-size="10" fill="#185FA5">~ ~ ~ eau ~ ~ ~</text>
+<circle cx="310" cy="140" r="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1"/>
+<text x="310" y="144" text-anchor="middle" font-size="9" fill="#993556">K</text>
+<text x="310" y="155" text-anchor="middle" font-size="8" fill="#185FA5">💨💨💨</text>
+<text x="340" y="188" text-anchor="middle" font-size="9" fill="#185FA5">Sous l'eau trop longtemps</text>
+<text x="340" y="201" text-anchor="middle" font-size="9" fill="#185FA5">→ noyade possible</text>
+
+<!-- Case 3: Maladie -->
+<rect x="460" y="40" width="200" height="170" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.2"/>
+<text x="470" y="57" font-size="10" fill="#412402" font-weight="500">Maladie</text>
+<circle cx="530" cy="110" r="14" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="530" y="114" text-anchor="middle" font-size="11" fill="#854F0B">A</text>
+<text x="530" y="96" text-anchor="middle" font-size="12">🤒</text>
+<line x1="530" y1="124" x2="530" y2="150" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="560" y="145" font-size="10" fill="#854F0B">SP ↓</text>
+<text x="560" y="158" font-size="10" fill="#854F0B">Moral ↓</text>
+<text x="560" y="171" font-size="10" fill="#854F0B">Paralysie</text>
+<text x="560" y="195" text-anchor="middle" font-size="9" fill="#633806">Nuit au moral, au mental</text>
+<text x="560" y="208" text-anchor="middle" font-size="9" fill="#633806">et peut paralyser</text>
+
+<text x="340" y="235" text-anchor="middle" font-size="12" fill="#2C2C2A" font-weight="500" font-style="italic">Les personnages sont fragiles face à la puissance de la Nature.</text>
+</svg>

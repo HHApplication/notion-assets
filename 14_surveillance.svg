@@ -1,0 +1,73 @@
+<svg width="1360" height="700" viewBox="0 0 680 350" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; background: #fff;">
+<text x="340" y="20" text-anchor="middle" font-size="14" fill="#2C2C2A" font-weight="600">Storyboard — Surveillance et infiltration : se faire repérer</text>
+
+<!-- Case 1: Hetep voit un objet sur un balcon -->
+<rect x="20" y="40" width="200" height="145" rx="6" fill="#FFF8F0" stroke="#B4B2A9" stroke-width="1.5"/>
+<text x="30" y="57" font-size="10" fill="#5F5E5A" font-weight="500">Case 1 — Objet repéré</text>
+<rect x="130" y="70" width="70" height="30" rx="3" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="165" y="85" text-anchor="middle" font-size="9" fill="#5F5E5A">balcon</text>
+<text x="165" y="96" text-anchor="middle" font-size="12">📦</text>
+<circle cx="70" cy="130" r="14" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="70" y="134" text-anchor="middle" font-size="11" fill="#854F0B" font-weight="500">H</text>
+<line x1="70" y1="144" x2="70" y2="168" stroke="#EF9F27" stroke-width="1.5"/>
+<rect x="90" y="115" width="100" height="25" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
+<text x="140" y="130" text-anchor="middle" font-size="9" fill="#633806">« Oh, un coffre</text>
+<text x="140" y="140" text-anchor="middle" font-size="9" fill="#633806">là-haut… »</text>
+
+<!-- Case 2: Hetep grimpe, caméra le repère -->
+<rect x="240" y="40" width="200" height="145" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1.5"/>
+<text x="250" y="57" font-size="10" fill="#501313" font-weight="500">Case 2 — Repéré !</text>
+<circle cx="290" cy="100" r="14" fill="#FAEEDA" stroke="#EF9F27" stroke-width="1.5"/>
+<text x="290" y="104" text-anchor="middle" font-size="11" fill="#854F0B" font-weight="500">H</text>
+<line x1="290" y1="114" x2="290" y2="140" stroke="#EF9F27" stroke-width="1.5"/>
+<!-- Caméra -->
+<rect x="370" y="65" width="50" height="25" rx="4" fill="#FCEBEB" stroke="#E24B4A" stroke-width="1"/>
+<text x="395" y="82" text-anchor="middle" font-size="10" fill="#E24B4A">📹</text>
+<!-- Faisceau de détection -->
+<line x1="370" y1="80" x2="310" y2="100" stroke="#E24B4A" stroke-width="0.8" stroke-dasharray="3 2"/>
+<line x1="370" y1="85" x2="310" y2="120" stroke="#E24B4A" stroke-width="0.8" stroke-dasharray="3 2"/>
+<!-- Alerte -->
+<rect x="330" y="120" width="100" height="45" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+<text x="380" y="135" text-anchor="middle" font-size="10" fill="#A32D2D" font-weight="500">🚨 ALERTE</text>
+<text x="380" y="149" text-anchor="middle" font-size="9" fill="#791F1F">Dénoncé via</text>
+<text x="380" y="160" text-anchor="middle" font-size="9" fill="#791F1F">[SHIFT+] réseau</text>
+
+<!-- Case 3: Conséquences -->
+<rect x="460" y="40" width="200" height="145" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="1.5"/>
+<text x="470" y="57" font-size="10" fill="#4A1B0C" font-weight="500">Case 3 — Conséquences</text>
+<!-- Police arrive -->
+<circle cx="510" cy="100" r="12" fill="#FAECE7" stroke="#D85A30" stroke-width="1"/>
+<text x="510" y="104" text-anchor="middle" font-size="10" fill="#993C1D">👮</text>
+<circle cx="550" cy="105" r="12" fill="#FAECE7" stroke="#D85A30" stroke-width="1"/>
+<text x="550" y="109" text-anchor="middle" font-size="10" fill="#993C1D">👮</text>
+<!-- Mekhien (chien cyborg) -->
+<text x="590" y="115" font-size="14">🐕</text>
+<text x="510" y="140" font-size="10" fill="#993C1D">Saouperous arrivent</text>
+<text x="510" y="155" font-size="10" fill="#993C1D">avec Mekhiens</text>
+<text x="510" y="170" font-size="9" fill="#4A1B0C" font-weight="500">Combat forcé ou fuite</text>
+
+<!-- Version correcte en dessous -->
+<rect x="20" y="200" width="640" height="130" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="1.5"/>
+<text x="340" y="220" text-anchor="middle" font-size="12" fill="#173404" font-weight="600">✅ Comment bien s'infiltrer</text>
+
+<!-- Kahay observe d'abord -->
+<circle cx="80" cy="270" r="14" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+<text x="80" y="274" text-anchor="middle" font-size="11" fill="#993556" font-weight="500">K</text>
+<rect x="100" y="245" width="130" height="35" rx="6" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+<text x="165" y="260" text-anchor="middle" font-size="9" fill="#993556">1. Observer les caméras</text>
+<text x="165" y="273" text-anchor="middle" font-size="9" fill="#993556">2. Scanner via [SHIFT+]</text>
+
+<!-- Kahay pirate -->
+<text x="260" y="268" text-anchor="middle" font-size="16">→</text>
+<rect x="290" y="248" width="120" height="35" rx="6" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+<text x="350" y="263" text-anchor="middle" font-size="9" fill="#993556">3. Pirater la caméra</text>
+<text x="350" y="276" text-anchor="middle" font-size="9" fill="#993556">ou la désactiver</text>
+
+<!-- Succès -->
+<text x="440" y="268" text-anchor="middle" font-size="16">→</text>
+<rect x="470" y="248" width="170" height="35" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+<text x="555" y="263" text-anchor="middle" font-size="9" fill="#27500A">4. Accès discret ✅</text>
+<text x="555" y="276" text-anchor="middle" font-size="9" fill="#27500A">Pas d'alerte, pas de combat</text>
+
+<text x="340" y="315" text-anchor="middle" font-size="11" fill="#173404" font-style="italic">Un NPC, une caméra ou un drone qui voit une intrusion la dénonce IMMÉDIATEMENT via [SHIFT+].</text>
+</svg>
